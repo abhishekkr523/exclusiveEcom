@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SidebarCarouselComponent } from './components/main/home/sidebar-carousel/sidebar-carousel.component';
+import { SidebarCarouselComponent } from './components/main/sidebar-carousel/sidebar-carousel.component';
 
 @NgModule({
   declarations: [
