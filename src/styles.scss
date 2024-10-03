@@ -4,12 +4,15 @@ html, body {
     height: 100%;
     }
 :root {
-    --color-primary:rgb(10, 10, 234);
-    --color-secondary: rgb(17, 234, 155);
+
+    --color-primary:rgba(219, 68, 68, 1);
+    --color-secondary: rgba(255, 173, 51, 1);
+    --color-tertiary: rgba(0, 0, 0, 1);
+    --color-quaternary: rgba(71, 180, 134, 1);
+    --color-quinary: rgba(250, 250, 250, 1);
     --color-white: #fffff;
     --fontweight-bold: 500px;
     --fontweight-bold: 900px;
-    --bg-color:#F4F5F7;
     --hover-color-gray:rgb(223, 231, 232);
     --hover-color-lightgray:rgb(237, 241, 241);
   }
