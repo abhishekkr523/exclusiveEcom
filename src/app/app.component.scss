@@ -1,0 +1,5 @@
+@import "./mixsin.scss";
+
+.container {
+  @include flex-space-between;
+}
