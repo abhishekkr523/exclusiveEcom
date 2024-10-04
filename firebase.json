@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/exclusive-ecom/browser",
+    "public": "dist/exclusive-ecom/browser/SidebarCarousel",
     "ignore": [
       "firebase.json",
       "**/.*",
