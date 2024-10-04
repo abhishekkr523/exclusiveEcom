@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SidebarCarouselComponent } from './components/sidebar-carousel/sidebar-carousel.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  {path: 'SidebarCarousel', component: SidebarCarouselComponent},
+  {path: '', component: HomeComponent},
   {path: '**', redirectTo: '404'}
 ];
 
