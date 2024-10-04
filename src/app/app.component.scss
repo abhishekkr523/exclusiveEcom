@@ -1,5 +1,13 @@
 @import "./mixsin.scss";
 
-.container {
-  @include flex-center;
+.contain{
+  padding: 0;
+  width: 100% !important;
+  background-color: var(--color-black);
+  margin: 0;
+  // @include flex-center;
+}
+.header{
+  background-color: var(--color-black);
+  width: 100%;
 }

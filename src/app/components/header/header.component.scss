@@ -1,0 +1,121 @@
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.head1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head1,.dropdown-btn{
+    background-color: var(--color-black);
+    color: var(--fontcolor-header);
+    height: 48px;
+}
+.sale{
+    
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.dropdown-btn{
+    border: 0;
+}
+.head1center{
+    width: 59.6%;
+    margin-left: 28.6%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.head2{
+    background-color: var( --backgroundcolor-header);
+    // display: flex;
+    width: 100%;
+    height: 94px;
+    align-items: center;
+    // justify-content: center;
+    border-bottom:.5px solid rgba(0, 0, 0, 0.3) ;
+    
+  
+}
+
+.head2center,.head2mid{
+    display: flex;
+    justify-content: space-between;
+}
+.head2mid{
+    flex-basis: 57.69%;
+    // width: 367px;
+    // flex-grow: 1;
+    height: 24px;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.head2center{
+    // width: 1170px;
+    height: 38px;
+    padding-left: 9.37%;
+    padding-right: 9.37%;
+    // margin-left: 8.78%;
+    margin-top: 40px;
+    // margin-bottom: 16px;
+}
+.head2end{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 29.65%;
+}
+#exclusive{
+    font-weight:var(--fontweight-bold);
+    font-size: 24px;
+    margin-right: 28.14%;
+    font-family: 'Inter', sans-serif;
+}
+.nav-item {
+    cursor: pointer; /* Change cursor to pointer for better UX */
+    padding: 5px; /* Optional: Add some padding */
+    // width: 48px;
+    // flex-grow: 1;
+    height: 24px;
+    // row-gap: 48px;
+}
+
+.active {
+    text-decoration: underline;
+    
+    // background-color: blue;
+}
+.searchInput{
+    background-color: var(--backgroundcolor-header-searchbackground);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 1.9%;
+    padding-left: 5.2%;
+    flex-basis: 70%;
+}
+.searchbar{
+    background-color: var(--backgroundcolor-header-searchbackground); 
+    height: 38px; 
+    border: 0;
+}
+.searchbar::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+}
+.searchbar:focus{
+    border: 0;       
+    outline: none;
+}
+.addList{
+    display: flex;
+    flex-grow: .5;
+    align-items: center;
+    justify-content: space-between;
+}

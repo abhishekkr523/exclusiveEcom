@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  navItems = ['Home', 'Contact', 'About', 'Sign Up'];
+  activeItem!: string;
 
+  setActive(item: string) {
+    this.activeItem = item;
+  }
 }

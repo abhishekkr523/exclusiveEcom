@@ -1,1 +1,43 @@
-<p>header works!</p>
+<div class="head">
+    <div class="head1">
+        <div class="head1center">
+            <div class="sale">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <span
+                    style="text-decoration: underline;">ShopNow</span>
+            </div>
+            <span class="language-btn">
+                <button class="dropdown-btn" type="button" id="staticDropdownButton" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    English <span><img src="DropDown.png" alt=""></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="staticDropdownButton">
+                    <li><a class="dropdown-item" href="#">Option 1</a></li>
+                    <li><a class="dropdown-item" href="#">Option 2</a></li>
+                    <li><a class="dropdown-item" href="#">Option 3</a></li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <div class="head2">
+        <div class="head2center">
+            <div class="head2mid">
+                <span id="exclusive">Exclusive</span>
+                <div *ngFor="let item of navItems" (click)="setActive(item)"
+                    [ngClass]="{'active': activeItem === item}" class="nav-item">
+                    {{ item }}
+            </div>
+            </div>
+            <div class="head2end">
+                <div class="searchInput">
+                    <input type="text" placeholder="What are you looking for?" class="searchbar" >
+                        <span><img src="search.png" alt=""></span>
+                </div>
+                <div class="addList">
+                    <span><img src="Wishlist.png" alt=""></span>
+                    <span><img src="Cart1 with buy.png" alt=""></span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
