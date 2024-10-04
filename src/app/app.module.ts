@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidebarCarouselComponent } from './components/sidebar-carousel/sidebar-carousel.component';
 import { CarouselItemComponent } from './components/carousel-item/carousel-item.component';
 import { LayoutComponent } from './layout/layout.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LayoutComponent } from './layout/layout.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [
     provideClientHydration()
