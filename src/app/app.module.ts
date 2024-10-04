@@ -5,8 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SidebarCarouselComponent } from './components/main/sidebar-carousel/sidebar-carousel.component';
-import { CarouselItemComponent } from './components/main/carousel-item/carousel-item.component';
+import { SidebarCarouselComponent } from './components/sidebar-carousel/sidebar-carousel.component';
+import { CarouselItemComponent } from './components/carousel-item/carousel-item.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CarouselItemComponent } from './components/main/carousel-item/carousel-
     HeaderComponent,
     FooterComponent,
     SidebarCarouselComponent,
-    CarouselItemComponent
+    CarouselItemComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
