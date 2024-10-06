@@ -1,4 +1,4 @@
-<div class="outer-container" style="border-top: 0.5px solid rgba(0, 0, 0, 0.3);">
+<div class="outer-container" style="border-top: 0.5px solid rgba(0, 0, 0, 0.1);">
     <div class="outer-container-left">
         <div class="side-bar">
             <ul>
@@ -33,7 +33,7 @@
                    class="carousel-item" 
                    [ngClass]="{'active': i === 0}">
                 <div class="carousel-caption d-none d-md-block">
-                  <div class="carouser-container d-flex justify-content-center align-items-center px-5">
+                  <div class="carouser-container d-flex justify-content-around align-items-center px-5">
                     <div class="carouser-container-left" style="font-size: 40px;">
                       <h6 style="text-align: left;">
                         <span><img [src]="item.icon" alt="icon" style="margin-right: 10px;"></span> 
@@ -47,7 +47,7 @@
                       </h6>
                     </div>
                     <div class="carouser-container-right">
-                      <img [src]="item.image" alt="carousel-image" style="height: 300px;">
+                      <img [src]="item.image" alt="carousel-image" style="height: 260px;">
                     </div>
                   </div>
                 </div>

@@ -1,54 +1,66 @@
-.outer-container{
-    position: relative;
+@import "../../mixsin.scss";
+@import "../../../styles.scss";
+.main-container{
+    padding: 0% 9.4% 0% 9.4%; width: 100vw;
+
+.outer-container {
+  position: relative;
+  @include flex-space-around;
+  flex-direction: column;
+  height: 100%;
+  .item {
+    display: flex;
+    justify-content: space-between;
+    height: 65%;
+    width: 100%;
+    padding: 16px;
+    background: rgba(245, 245, 245, 1);
+    .item-left {
+        @include flex-center;
+      width: 55px;
+      height: 26px;
+      top: 12px;
+      left: 12px;
+      border-radius: 4px;
+      background: rgba(219, 68, 68, 1);
+      font-size: 12px;
+    }
+    .product-image {
+      position: absolute;
+      z-index: 5;
+      width: 183px;
+      height: 163px;
+      padding: 20px;
+      margin-left: 8px;
+      margin-top: 14px;
+    }
+  }
+  .item-content {
+    width: 252px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    .item{
-        display: flex;
-        justify-content: space-between;
-        
-        height: 100%;
-        width: 100%;
-        padding: 16px;
-        background: rgba(245, 245, 245, 1);
-        .item-left{
-            width: 55px;
-            height: 26px;
-            top:12px;
-            left: 12px;
-            border-radius: 4px;
-            padding: 4px 12px 4px 12px ;
-            background: rgba(219, 68, 68, 1);
-
-        }  
+    gap: 5px;
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 1);
     }
-    .item-content{
-        height: 88px;
-        display: flex;
-        flex-direction: column;
-        gap:5px;
-        .title{
-            font-size: 13px;
-            font-weight: 500;
-            // line-height: 24px;
-            color: rgba(0, 0, 0, 1);
-            padding-top: 12px;
-        }
-        .price{
-            color: rgba(219, 68, 68, 1);
-            font-size: 16px;
-            font-weight: 500;
-            // line-height: 24px;
-        }
-        .rating{
-            .star{
-                img{
-                    width: 20px;
-                    height: 20px;
-                
-                }
-            }
-        }
+    .price {
+      color: rgba(219, 68, 68, 1);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
     }
+    .rating {
+      .stars {
+        gap: 8px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
 }
