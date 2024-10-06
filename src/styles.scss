@@ -21,6 +21,8 @@ html, body {
     --fontweight-bold: 700;
     --hover-color-gray:rgb(223, 231, 232);
     --hover-color-lightgray:rgb(237, 241, 241);
+    // for big screen
+$media-query-between-big-screen: "(max-width: 1105px) and (min-width: 950px)";
   }
   
   /* Global styles */

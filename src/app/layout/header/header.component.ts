@@ -12,4 +12,8 @@ export class HeaderComponent {
   setActive(item: string) {
     this.activeItem = item;
   }
+  toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar?.classList.toggle('active');
+  }
 }

@@ -1,6 +1,6 @@
 <div class="head">
-    <div class="head1">
-        <div class="head1center">
+    <div class="head1 ">
+        <div class="head1center ">
             <div class="sale">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <span
                     style="text-decoration: underline;">ShopNow</span>
             </div>
@@ -19,25 +19,38 @@
     </div>
     <div class="head2">
         <div class="head2center">
-            <div class="head2mid">
-                <span id="exclusive">Exclusive</span>
+          <span id="exclusive">Exclusive</span>
+          
+            <div class="head2mid" id="sidebar">
+              <div id="innerSidebar">
                 <div *ngFor="let item of navItems" (click)="setActive(item)"
-                    [ngClass]="{'active': activeItem === item}" class="nav-item">
-                    {{ item }}
-            </div>
-            </div>
-            <div class="head2end">
-                <div class="searchInput">
+                [ngClass]="{'active': activeItem === item}" class="nav-item">
+                {{ item }}
+             </div>
+              </div>
+               
+                     </div>
+                     <div class="head2end">
+                 <div class="searchInput">
                     <input type="text" placeholder="What are you looking for?" class="searchbar" >
                         <span><img src="search.png" alt=""></span>
                 </div>
-                <div class="addList">
+                <div class="addList" >
                     <span><img src="Wishlist.png" alt=""></span>
                     <span><img src="Cart1 with buy.png" alt=""></span>
                 </div>
+                 <!-- Hamburger button -->
+    <div class="hamburger" id="hamburger" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
 
             </div>
         </div>
     </div>
 </div>
+
+
+  
