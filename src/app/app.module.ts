@@ -14,6 +14,7 @@ import { RouterModule } from '@angular/router';
 // import { BannerComponent } from './components/banner/banner.component';
 import { HomeModule } from './pages/home/home.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
