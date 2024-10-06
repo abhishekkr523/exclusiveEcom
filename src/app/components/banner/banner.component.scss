@@ -3,7 +3,7 @@
 
 .outer-container {
 width: 100vw;
-padding: 0% 9.4% 0% 9.4%;
+padding: $core-padding;
 @include flex-center;
 .outer-container-left {
   width: 16.2%;
