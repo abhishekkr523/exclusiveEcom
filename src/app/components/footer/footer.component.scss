@@ -1,10 +1,12 @@
+// @import "../../mixsin.scss";
 @import "../../mixsin.scss";
+@import "../../../styles.scss";
 .footer {
+  padding: $core-padding;
   display: flex;
   flex-direction: column;
-
   align-items: center;
-  background-color: var(--color-tertiary);
+  background-color: $color-tertiary;
   color: white;
   width: 100vw;
   height: 440px;

@@ -1,0 +1,68 @@
+<div class="outer-container" style="border-top: 0.5px solid rgba(0, 0, 0, 0.1);">
+    <div class="outer-container-left">
+        <div class="side-bar">
+            <ul>
+                <li>Woman’s Fashion <span><img src="Vector (5).png" alt="kk"></span></li>
+                <li>Men’s Fashion <span><img src="Vector (5).png" alt="kk"></span></li>
+                <li>Electronics</li>
+                <li>Home & Lifestyle</li>
+                <li>Medicine</li>
+                <li>Sports & Outdoor</li>
+                <li>Baby’s & Toys</li>
+                <li>Groceries & Pets</li>
+                <li>Health & Beauty</li>
+            </ul>
+        </div>
+            
+    </div>
+    <div class="outer-container-right">
+        <div class="carol">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button *ngFor="let item of carouselItems; let i = index"
+                      type="button" 
+                      [attr.data-bs-target]="'#carouselExampleCaptions'"
+                      [attr.data-bs-slide-to]="i" 
+                      [class.active]="i === 0"
+                      [attr.aria-current]="i === 0 ? 'true' : null"
+                      [attr.aria-label]="'Slide ' + (i + 1)">
+              </button>
+            </div>
+            <div class="carousel-inner">
+              <div *ngFor="let item of carouselItems; let i = index" 
+                   class="carousel-item" 
+                   [ngClass]="{'active': i === 0}">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="carouser-container d-flex justify-content-around align-items-center px-5">
+                    <div class="carouser-container-left" style="font-size: 40px;">
+                      <h6 style="text-align: left;">
+                        <span><img [src]="item.icon" alt="icon" style="margin-right: 10px;"></span> 
+                        {{ item.title }}
+                      </h6>
+                      <span style="display:flex; text-align: left; font-family: 'Inter', sans-serif; line-height: 60px; letter-spacing: 6%; font-weight: 600; width:250px; height: 120px;">
+                        {{ item.description }}
+                      </span>
+                      <h6 style="text-align: left; text-decoration: underline;">
+                        {{ item.shopNowText }} <span><img [src]="item.buttonIcon" alt="button-icon"></span>
+                      </h6>
+                    </div>
+                    <div class="carouser-container-right">
+                      <img [src]="item.image" alt="carousel-image" style="height: 260px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+</div>
