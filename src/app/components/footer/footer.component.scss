@@ -19,7 +19,7 @@
     gap: 7.45%;
     // margin: 80px 9.275% 60px 9.275%;
     margin: 5.44% 8.275% 3.08% 8.275%;
-    width: 77.75%;
+    width: 95.75%;
     height: 236px;
     .Box {
       width: 217px;
@@ -312,18 +312,17 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-tertiary);
+    // background-color: var(--color-tertiary);
     color: white;
     height: 590px;
     .footer-con {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 
-        gap: 5%;
-      }
+      gap: 5%;
+    }
   }
-
 
   .Box,
   .Box-1,
@@ -347,11 +346,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-tertiary);
+    // background-color: var(--color-tertiary);
     color: white;
     height: 590px;
   }
-
 
   .Box,
   .Box-1,
@@ -372,7 +370,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-tertiary);
+    // background-color: var(--color-tertiary);
     color: white;
     height: 600px;
   }
@@ -397,7 +395,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-tertiary);
+    // background-color: var(--color-tertiary);
     color: white;
     height: 850px;
   }
@@ -443,7 +441,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-tertiary);
+    // background-color: var(--color-tertiary);
     color: white;
     height: 1280px;
   }
