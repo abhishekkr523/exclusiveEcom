@@ -8,3 +8,13 @@
     justify-content: space-between;
     align-items: center;
   }
+  @mixin flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  @mixin logo-font{
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+  }

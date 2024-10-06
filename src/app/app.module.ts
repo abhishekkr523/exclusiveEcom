@@ -1,24 +1,38 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './layout/header/header.component';
-import { FooterComponent } from './layout/footer/footer.component';
-import { SidebarCarouselComponent } from './components/main/sidebar-carousel/sidebar-carousel.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+// import { SidebarCarouselComponent } from './components/sidebar-carousel/sidebar-carousel.component';
 import { LayoutComponent } from './layout/layout.component';
+import { RouterModule } from '@angular/router';
+// import { CarouselModule } from 'ngx-owl-carousel-o';
+// import { CarouselComponent } from './components/carousel/carousel.component';
+// import { BannerComponent } from './components/banner/banner.component';
+import { HomeModule } from './pages/home/home.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SidebarCarouselComponent,
-    LayoutComponent
+    // SidebarCarouselComponent,
+    LayoutComponent,
+    // CarouselComponent,
+    // BannerComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    RouterModule,
+    // CarouselModule,
+    HomeModule
   ],
   providers: [
     provideClientHydration()
