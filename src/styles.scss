@@ -13,13 +13,13 @@ $color-tertiary: rgba(0, 0, 0, 1);
 $color-quaternary: rgba(71, 180, 134, 1);
 $color-quinary: rgba(250, 250, 250, 1);
 $color-white: #ffffff;
+$color-white-primary:rgba(245, 245, 245, 1);
 $fontweight-bold: 500;
 $fontweight-extra-bold: 900;
 $hover-color-gray: rgb(223, 231, 232);
 $hover-color-lightgray: rgb(237, 241, 241);
-
 $core-padding: 0% 9.4% 0% 9.4%;
-
+$main-padding:9.4%;
 /* Global styles */
 body {
 font-family: "Poppins", sans-serif;
