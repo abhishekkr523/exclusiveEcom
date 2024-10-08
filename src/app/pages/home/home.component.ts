@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent{
    fruits = [
     "Apple",
     "Banana",
@@ -190,7 +190,7 @@ export class HomeComponent {
       //   items: 5
       // }
     },
-    nav: false,
+    nav: true,
   }
 
   navCustomOption={
@@ -221,6 +221,11 @@ export class HomeComponent {
       //   items: 5
       // }
     },
-    nav: false,
+    nav: true,
+  }
+
+  handleCrauselNav(buttomType:string){
+    const previousButton:any= document.getElementsByClassName(buttomType);
+    previousButton[0].click()
   }
 }

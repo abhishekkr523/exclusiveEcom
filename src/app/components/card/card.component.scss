@@ -1,7 +1,7 @@
 @import "../../mixsin.scss";
 @import "../../../styles.scss";
 .most-outer-container {
-  padding: 0% 0% 0% 9.4%;
+//   padding: 0% 0% 0% 9.4%;
   width: 100vw;
   height: 376px;
 
@@ -9,7 +9,7 @@
     position: relative;
     @include flex-space-between;
     flex-direction: column;
-    width: 250px;
+    width: 275px;
     height: 330px;
     .item {
       display: flex;
@@ -34,7 +34,7 @@
         width: 190px;
         height: 174px;
         padding: 20px;
-        margin-left: 8px;
+        margin-left: 20px;
         margin-top: 14px;
       }
     }

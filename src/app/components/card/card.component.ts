@@ -12,13 +12,13 @@ export class CardComponent  implements OnInit{
   @Input() product: any = {};
 
 
-  //  // Returns an array to dynamically generate filled stars based on the rating
-  //  getFilledStars(rating: number): any[] {
-  //   return new Array(rating);
-  // }
+   // Returns an array to dynamically generate filled stars based on the rating
+   getFilledStars(rating: number): any[] {
+    return new Array(rating);
+  }
 
-  // // Returns an array to dynamically generate empty stars (5 - rating)
-  // getEmptyStars(rating: number): any[] {
-  //   return new Array(5 - rating);
-  // }
+  // Returns an array to dynamically generate empty stars (5 - rating)
+  getEmptyStars(rating: number): any[] {
+    return new Array(5 - rating);
+  }
 }

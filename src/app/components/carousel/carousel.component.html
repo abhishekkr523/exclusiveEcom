@@ -3,20 +3,17 @@
     @switch(carouselType){
         @case('homeData'){
             <ng-template carouselSlide  *ngFor="let product of data">
-                <p>{{ product.title }}</p>
                 <app-card [product]="product"></app-card>
-        
             </ng-template>
-
         }
-        @case('nav'){
+        <!-- @case('nav'){
             <ng-template carouselSlide  *ngFor="let product of data">
                 <p>{{ product }}</p>
                
         
             </ng-template>
 
-        }
+        } -->
         @default {
             Default case.
           }
