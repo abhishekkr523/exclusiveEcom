@@ -1,18 +1,20 @@
 @import "../../mixsin.scss";
 @import "../../../styles.scss";
-.main-container {
+.most-outer-container {
   padding: 0% 0% 0% 9.4%;
   width: 100vw;
+  height: 376px;
 
   .outer-container {
     position: relative;
-    @include flex-space-around;
+    @include flex-space-between;
     flex-direction: column;
-    height: 100%;
+    width: 250px;
+    height: 330px;
     .item {
       display: flex;
       justify-content: space-between;
-      height: 65%;
+      height: 70%;
       width: 100%;
       padding: 16px;
       background: rgba(245, 245, 245, 1);

@@ -15,13 +15,13 @@ import { RouterModule, Routes } from '@angular/router';
 //   }
 // ];
 @NgModule({
-  declarations: [HomeComponent,BannerComponent,CarouselComponent],
+  declarations: [],
   imports: [
-    CommonModule,CarouselModule,
+    CommonModule,
   ],
   exports : [
-    BannerComponent,
-    CarouselComponent
+   
+
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA] 
 })

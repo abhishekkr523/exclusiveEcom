@@ -1,192 +1,31 @@
-import { Component } from '@angular/core';
+import { Component, Input, input, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.scss'
+   styleUrls: ['./carousel.component.scss']
 })
-export class CarouselComponent {
-  customOptions: OwlOptions = {
-    loop: false,
-    // mouseDrag: true,
-    // touchDrag: true,
-    // pullDrag: true,
-    dots: true,
-    // navSpeed: 700,
-    // autoplay: true,    // Enable autoplay
-    // autoplayTimeout: 3000,  // Time between automatic slides
-    // autoplayHoverPause: true,  // Pause autoplay on hover
-    // autoplaySpeed: 1000, 
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 2
-      },
-      900: {
-        items: 3
-      },
-      1200: {
-        items: 5
-      },
-      // 1478: {
-      //   items: 5
-      // }
-    },
-    nav: false
-  };
-  
-  products = [
-    {
-      title: 'HAVIT HV-G92 Gamepad',
-      price: 120,
-      actualPrice:200,
-      discount: '-40%',
-      rating: 2,
-      heartIcon: 'heart.png',
-      eyeIcon: 'eye.png',
-      productImage: 'joystick.png',
-      starIcon: 'star.png',
-      percentage: 80,
-    },
-    {
-      title: 'HAVIT HV-G92 Keyboard',
-      price: 120,
-      actualPrice:200,
-      discount: '-40%',
-      rating: 4,
-      heartIcon: 'heart.png',
-      eyeIcon: 'eye.png',
-      productImage: 'keyboard.png',
-      starIcon: 'star.png',
-      percentage: 80,
-    },
-    {
-      title: 'HAVIT HV-G92 Monitor',
-      price: 120,
-      actualPrice:200,
-      discount: '-40%',
-      rating: 3,
-      heartIcon: 'heart.png',
-      eyeIcon: 'eye.png',
-      productImage: 'monitor.png',
-      starIcon: 'star.png',
-      percentage: 80,
-    },
-    {
-      title: 'HAVIT HV-G92 Monitor',
-      price: 120,
-      actualPrice:200,
-      discount: '-40%',
-      rating: 3,
-      heartIcon: 'heart.png',
-      eyeIcon: 'eye.png',
-      productImage: 'monitor.png',
-      starIcon: 'star.png',
-      percentage: 80,
-    },
-    {
-      title: 'HAVIT HV-G92 Chair',
-      price: 120,
-      actualPrice:200,
-      discount: '-40%',
-      rating: 2,
-      heartIcon: 'heart.png',
-      eyeIcon: 'eye.png',
-      productImage: 'chair.png',
-      starIcon: 'star.png',
-      percentage: 80,
-    },
-    {
-      title: 'HAVIT HV-G92 Gamepad',
-      price: 120,
-      actualPrice:200,
-      discount: '-40%',
-      rating: 2,
-      heartIcon: 'heart.png',
-      eyeIcon: 'eye.png',
-      productImage: 'joystick.png',
-      starIcon: 'star.png',
-      percentage: 80,
-    },
-    {
-      title: 'HAVIT HV-G92 Keyboard',
-      price: 120,
-      actualPrice:200,
-      discount: '-40%',
-      rating: 4,
-      heartIcon: 'heart.png',
-      eyeIcon: 'eye.png',
-      productImage: 'keyboard.png',
-      starIcon: 'star.png',
-      percentage: 80,
-    },
-    {
-      title: 'HAVIT HV-G92 Monitor',
-      price: 120,
-      actualPrice:200,
-      discount: '-40%',
-      rating: 3,
-      heartIcon: 'heart.png',
-      eyeIcon: 'eye.png',
-      productImage: 'monitor.png',
-      starIcon: 'star.png',
-      percentage: 80,
-    },
-    {
-      title: 'HAVIT HV-G92 Monitor',
-      price: 120,
-      actualPrice:200,
-      discount: '-40%',
-      rating: 3,
-      heartIcon: 'heart.png',
-      eyeIcon: 'eye.png',
-      productImage: 'monitor.png',
-      starIcon: 'star.png',
-      percentage: 80,
-    },
-    {
-      title: 'HAVIT HV-G92 Chair',
-      price: 120,
-      actualPrice:200,
-      discount: '-40%',
-      rating: 2,
-      heartIcon: 'heart.png',
-      eyeIcon: 'eye.png',
-      productImage: 'chair.png',
-      starIcon: 'star.png',
-      percentage: 80,
-    },
-    {
-      title: 'HAVIT HV-G92 Chair',
-      price: 120,
-      actualPrice:200,
-      discount: '-40%',
-      rating: 2,
-      heartIcon: 'heart.png',
-      eyeIcon: 'eye.png',
-      productImage: 'chair.png',
-      starIcon: 'star.png',
-      percentage: 80,
-    },
+export class CarouselComponent implements OnInit {
+  @Input() data:any
+  products: any[] = [];
+  @Input() carouselType:any ;
+
+  @Input() customOptions: any;
+
+
+  ngOnInit(): void {
+    this.loadProducts();
+   
+
+    console.log('ooo', this.products);
+   
+  }
+  loadProducts() {
+    // Fetch or initialize your products here
     
-  ];
-  showCarousel: boolean = true;
-
-  // Returns an array to dynamically generate filled stars based on the rating
-  getFilledStars(rating: number): any[] {
-    return new Array(rating);
+    console.log('Products loaded:', this.products);
   }
 
-  // Returns an array to dynamically generate empty stars (5 - rating)
-  getEmptyStars(rating: number): any[] {
-    return new Array(5 - rating);
-  }
-
-  // Function to toggle the view
-  toggleViewAll() {
-    this.showCarousel = !this.showCarousel; // Toggle the carousel visibility
-  }
+ 
 }
