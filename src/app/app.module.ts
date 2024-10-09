@@ -13,7 +13,8 @@ import { RouterModule } from '@angular/router';
 // import { CarouselComponent } from './components/carousel/carousel.component';
 // import { BannerComponent } from './components/banner/banner.component';
 import { HomeModule } from './pages/home/home.module';
-import { BrowseByCategoriesCarouselComponent } from './components/browse-by-categories-carousel/browse-by-categories-carousel.component';
+// import { OfferProductComponent } from './components/offer-product/offer-product.component';
+// import { BrowseByCategoriesCarouselComponent } from './components/browse-by-categories-carousel/browse-by-categories-carousel.component';
 
 
 @NgModule({
@@ -23,10 +24,11 @@ import { BrowseByCategoriesCarouselComponent } from './components/browse-by-cate
     FooterComponent,
     // SidebarCarouselComponent,
     LayoutComponent,
-    BrowseByCategoriesCarouselComponent,
+    // OfferProductComponent,
+    // BrowseByCategoriesCarouselComponent,
     // CarouselComponent,
     // BannerComponent,
-    
+
   ],
   imports: [
     BrowserModule,
