@@ -162,6 +162,21 @@ export class HomeComponent{
       percentage: 80,
     },
   ];
+  salesData: any = {
+    title1: 'Today\'s',
+    title2: 'Flash Sales',
+    timeUnits: [
+      { title: 'Days', duration: '03' },
+      { title: 'Hours', duration: '03' },
+      { title: 'Minutes', duration: '03' },
+      { title: 'Seconds', duration: '03' }
+    ]
+  };
+  newArrival: any = {
+    title1: 'Featured',
+    title2: 'New Arrival',
+    
+  };
   productCustomOption ={
     loop: false,
     // mouseDrag: true,

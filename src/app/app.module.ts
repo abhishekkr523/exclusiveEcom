@@ -4,8 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './layout/components/header/header.component';
+import { FooterComponent } from './layout/components/footer/footer.component';
 // import { SidebarCarouselComponent } from './components/sidebar-carousel/sidebar-carousel.component';
 import { LayoutComponent } from './layout/layout.component';
 import { RouterModule } from '@angular/router';
@@ -15,6 +15,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { HomeModule } from './pages/home/home.module';
 import { CardComponent } from './components/card/card.component';
 import { HomeComponent } from './pages/home/home.component';
+import { SecondaryHeaderComponent } from './components/secondary-header/secondary-header.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HomeComponent } from './pages/home/home.component';
     CardComponent,
     CarouselComponent,
     BannerComponent,
-    HomeComponent
+    HomeComponent,
+    SecondaryHeaderComponent
     
   ],
   

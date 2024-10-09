@@ -7,8 +7,8 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
    styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
-  
-  @Input() data:any
+
+  @Input() data:any;
   products: any[] = [];
   @Input() carouselType:any ;
 
