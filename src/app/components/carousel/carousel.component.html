@@ -7,6 +7,12 @@
     </ng-template>
     }
    
+    @case('bestSellingProduct'){
+    <ng-template carouselSlide *ngFor="let products of bestSellingProductsdata">
+      <!-- {{products.title}} -->
+      <app-explore-product-card [product]="products"></app-explore-product-card>
+    </ng-template>
+    }
     @case('exploreProducts'){
     <ng-template carouselSlide *ngFor="let products of exploreProductsdata">
       <!-- {{products.title}} -->

@@ -9,6 +9,8 @@ export class ExploreProductCardComponent {
 
   @Input() product: any = {  };
   @Input() customOptions: any;
+
+
  // Returns an array to dynamically generate filled stars based on the rating
  getFilledStars(rating: number): any[] {
   return new Array(rating);

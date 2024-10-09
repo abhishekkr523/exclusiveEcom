@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { title } from 'process';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent{
+  hide!:boolean;
    fruits = [
     "Apple",
     "Banana",
@@ -302,6 +304,28 @@ export class HomeComponent{
       ]
     },
   ];
+  salesData: any = {
+    title1: 'Today\'s',
+    title2: 'Flash Sales',
+    title3:'Our Products',
+    timeUnits: [
+      { title: 'Days', duration: '03' },
+      { title: 'Hours', duration: '03' },
+      { title: 'Minutes', duration: '03' },
+      { title: 'Seconds', duration: '03' }
+    ]
+  };
+
+  exploreProducts:any={
+    title1:'Our Products',
+    title2:'Explore Our Products'
+  }
+  newArrival: any = {
+    title1: 'Featured',
+    title2: 'New Arrival',
+    title3:'Explore Our Products'
+    
+  };
   productCustomOption ={
     loop: false,
     // mouseDrag: true,

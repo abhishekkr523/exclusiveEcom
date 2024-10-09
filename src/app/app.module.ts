@@ -15,8 +15,10 @@ import { BannerComponent } from './components/banner/banner.component';
 import { HomeModule } from './pages/home/home.module';
 import { CardComponent } from './components/card/card.component';
 import { HomeComponent } from './pages/home/home.component';
+import { SecondaryHeaderComponent } from './components/secondary-header/secondary-header.component';
 
 import { ExploreProductCardComponent } from './components/card/ExploreProductCard/explore-product-card/explore-product-card.component';
+import { BestSellingProductComponent } from './components/ThisMonthProductContainer/best-selling-product/best-selling-product.component';
 
 
 
@@ -33,7 +35,9 @@ import { ExploreProductCardComponent } from './components/card/ExploreProductCar
     CarouselComponent,
     BannerComponent,
     HomeComponent,
-    ExploreProductCardComponent
+    ExploreProductCardComponent,
+    SecondaryHeaderComponent,
+    BestSellingProductComponent
     
   ],
   

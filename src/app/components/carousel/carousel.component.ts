@@ -11,12 +11,17 @@ export class CarouselComponent implements OnInit {
   @Input() data:any
  
   @Input() exploreProductsdata:any;
+  @Input() bestSellingProductsdata:any;
  
   @Input() carouselType:any ;
 
   @Input() customOptions: any;
 
-
+  newArrival: any = {
+    
+    title1:'Explore Our Products',title2:'Our Products'
+    
+  };
   ngOnInit(): void {
     this.loadProducts();
    
