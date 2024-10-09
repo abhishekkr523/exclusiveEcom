@@ -16,6 +16,7 @@ import { HomeModule } from './pages/home/home.module';
 import { CardComponent } from './components/card/card.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SecondaryHeaderComponent } from './components/secondary-header/secondary-header.component';
+import { SidebarComponent } from './pages/home/components/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { SecondaryHeaderComponent } from './components/secondary-header/secondar
     CarouselComponent,
     BannerComponent,
     HomeComponent,
-    SecondaryHeaderComponent
+    SecondaryHeaderComponent,
+    SidebarComponent
     
   ],
   
