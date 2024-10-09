@@ -1,6 +1,6 @@
-<div class="head">
-    <div class="head1 ">
-        <div class="head1center">
+<div class="nav">
+    <div class="shop">
+        <div class="Box">
             <div class="sale">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <span
                     style="text-decoration: underline;">ShopNow</span>
             </div>
@@ -17,11 +17,11 @@
             </span>
         </div>
     </div>
-    <div class="head2">
-        <div class="head2center">
+    <div class="Navbar">
+        <div class="inner-navbar">
             <span id="exclusive">Exclusive</span>
 
-            <div class="head2mid" >
+            <div class="center-navbar" >
                 <div id="navItems">
                     <div *ngFor="let item of navItems" (click)="setActive(item)"
                         [ngClass]="{'active': activeItem === item}" class="nav-item">
@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </div>
-            <div class="head2end">
+            <div class="right-navbar">
                 <div class="searchInput">
                     <input type="text" placeholder="What are you looking for?" class="searchbar">
                     <span><img src="search.png" alt=""></span>
@@ -37,7 +37,8 @@
                 <div class="addList">
                     <span id="wishlist" class="additional"><img src="Wishlist.png" alt=""></span>
                     <span id="cart" class="additional"><img src="Cart1 with buy.png" alt=""></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" fill="currentColor" id="hamburger" (click)="toggleSidebar()" class="bi bi-list" viewBox="0 0 16 16">
+                    <!-- <app-hamburger></app-hamburger> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" fill="currentColor" id="hamburger" (click)="toggleSidebar()" class="bi bi-list" viewBox="0 0 16 16" (click)="preventScroll()">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                       </svg>
                 </div>
@@ -50,11 +51,23 @@
                 <!-- <i class="bi bi-list" id="hamburger" (click)="toggleSidebar()"></i> -->
                 
                 <div class="head2mid" id="sidebar" [class.active]="isSidebarOpen" (click)="$event.stopPropagation()">
+                    <div class="cancel-btn" style="width: 100%; padding-bottom: 20px;">
+                       <a (click)="toggleSidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                       </a>
+                    </div>
                     <div id="innerSidebar">
-                        <div *ngFor="let item of navItems" (click)="setActive(item)"
+                        <div class="nav-item" id="search">Search</div>
+                        <!-- <div *ngFor="let item of navItems" (click)="setActive(item)"
                             [ngClass]="{'active': activeItem === item}" class="nav-item">
                             {{ item }}
+                        </div> -->
+                        <div *ngFor="let item of navItems" class="nav-item">
+                            {{ item }}
                         </div>
+                        <div class="nav-item">Login</div>
                     </div>
                 </div>
 

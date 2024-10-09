@@ -7,6 +7,7 @@ import { CarouselComponent } from '../../components/carousel/carousel.component'
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
+
 @NgModule({
   declarations: [HomeComponent,BannerComponent,CarouselComponent],
   imports: [
