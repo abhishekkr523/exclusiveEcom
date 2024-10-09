@@ -9,10 +9,14 @@ import { FooterComponent } from './layout/components/footer/footer.component';
 // import { SidebarCarouselComponent } from './components/sidebar-carousel/sidebar-carousel.component';
 import { LayoutComponent } from './layout/layout.component';
 import { RouterModule } from '@angular/router';
-// import { CarouselModule } from 'ngx-owl-carousel-o';
-// import { CarouselComponent } from './components/carousel/carousel.component';
-// import { BannerComponent } from './components/banner/banner.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { BannerComponent } from './components/banner/banner.component';
 import { HomeModule } from './pages/home/home.module';
+import { CardComponent } from './components/card/card.component';
+import { HomeComponent } from './pages/home/home.component';
+
+import { ExploreProductCardComponent } from './components/card/ExploreProductCard/explore-product-card/explore-product-card.component';
 
 
 
@@ -25,19 +29,21 @@ import { HomeModule } from './pages/home/home.module';
     FooterComponent,
     // SidebarCarouselComponent,
     LayoutComponent,
-   
-    
-    // CarouselComponent,
-    // BannerComponent,
+    CardComponent,
+    CarouselComponent,
+    BannerComponent,
+    HomeComponent,
+    ExploreProductCardComponent
     
   ],
+  
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule,
-    // CarouselModule,
-    HomeModule
+    CarouselModule,
+    // HomeModule
   ],
   providers: [
     provideClientHydration()
