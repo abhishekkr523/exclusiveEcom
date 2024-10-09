@@ -1,19 +1,7 @@
 <div class="container">
-  <!-- <div class="box1">
-    <div class="box-1-inner">
-      <div class="box-1-inner-in">
-        <div></div>
-        <p>catrigies</p>
-      </div>
-      <h1>Browse By Category</h1>
-    </div>
-    <div class="box-2-inner">
-      <img src="icons_arrow-left.png" alt="">
-      <img src="icons arrow-right.png" alt="">
-    </div>
-  </div> -->
+ 
   <div class="box2">
-    <div class="box-2-inner">
+    <div class="box-2-inner"(click)="selectCategory(category)" [ngClass]="{'selected': isSelected}">
 
       <img [src]="category.icon" alt="">
       <p>{{category.name}}</p>
@@ -24,4 +12,4 @@
 
 
 
-<hr>
+<!-- <hr> -->

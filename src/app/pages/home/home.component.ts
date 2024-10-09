@@ -172,6 +172,37 @@ export class HomeComponent{
     { name: 'Gaming', icon: 'Category-Gamepad.png' },
   ];
 
+  categoriesCustomOption ={
+    loop: true,
+    // mouseDrag: true,
+    // touchDrag: true,
+    // pullDrag: true,
+    dots: false,
+    // navSpeed: 700,
+    // autoplay: true,    // Enable autoplay
+    // autoplayTimeout: 3000,  // Time between automatic slides
+    // autoplayHoverPause: true,  // Pause autoplay on hover
+    // autoplaySpeed: 1000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      900: {
+        items: 3,
+      },
+      1200: {
+        items: 6,
+      },
+      // 1478: {
+      //   items: 5
+      // }
+    },
+    nav: false,
+  }
+
   productCustomOption ={
     loop: false,
     // mouseDrag: true,

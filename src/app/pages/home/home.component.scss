@@ -90,3 +90,72 @@ width: 275px;
     }
 }
 
+
+
+
+//browser by categories scss
+.category{
+  // padding: $core-padding;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 107px 0 146px;
+    .box-1-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      h1 {
+        //styleName: Heading/36PX SemiBold;
+        font-family: Inter;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        color: rgba(0, 0, 0, 1);
+      }
+      .box-1-inner-in {
+        width: 126px;
+        height: 40px;
+        gap: 16px;
+
+        display: flex;
+        align-items: center;
+
+        div {
+          width: 20px;
+          height: 40px;
+          background-color: rgba(219, 68, 68, 1);
+        }
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 20px;
+          // text-align: left;
+          padding-top: 11px;
+          color: rgba(219, 68, 68, 1);
+        }
+      }
+    }
+    .box-2-inner {
+      display: flex;
+      width: 100px;
+      height: 46px;
+      gap: 8px;
+      padding-top: 20px;
+      img {
+        width: 32px;
+        height: 32px;
+        border: 1px solid red;
+        border-radius: 50%;
+        padding: 5px 4px 5px 4px;
+      }
+    }
+  }
+}

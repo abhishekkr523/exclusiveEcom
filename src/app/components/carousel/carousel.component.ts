@@ -8,10 +8,12 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class CarouselComponent implements OnInit {
   @Input() data: any;
-  
+
   @Input() carouselType: any;
 
   @Input() customOptions: any;
+
+  @Input() className: any;
 
 
   ngOnInit(): void {

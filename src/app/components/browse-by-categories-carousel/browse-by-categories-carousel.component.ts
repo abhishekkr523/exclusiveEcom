@@ -8,4 +8,15 @@ import { Component, Input, ViewChild } from '@angular/core';
 })
 export class BrowseByCategoriesCarouselComponent {
   @Input() category: any = {};
+
+
+  isSelected = false;
+
+
+  selectCategory(category: any) {
+     
+    this.isSelected = !this.isSelected;
+
+  }
+
 }
