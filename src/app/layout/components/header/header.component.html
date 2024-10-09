@@ -19,10 +19,10 @@
     </div>
     <div class="Navbar">
         <div class="inner-navbar">
-            <span id="exclusive">Exclusive</span>
+            <span class="exclusive">Exclusive</span>
 
             <div class="center-navbar" >
-                <div id="navItems">
+                <div class="navItems">
                     <div *ngFor="let item of navItems" (click)="setActive(item)"
                         [ngClass]="{'active': activeItem === item}" class="nav-item">
                         {{ item }}

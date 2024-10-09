@@ -87,7 +87,7 @@ a{
     justify-content: space-between;
     // flex-basis: 29.65%;
 }
-#exclusive{
+.exclusive{
     @include logo-font;
  
     // position: relative;
@@ -184,7 +184,7 @@ height: 100%;
   display: flex;
   z-index: 2000;
 }
-#navItems{
+.navItems{
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -233,7 +233,7 @@ height: 100%;
  
 
 @media (max-width: 860px) {
-    #exclusive{
+    .exclusive{
         padding-right: 8.05%;
     }
     .Box{
@@ -317,7 +317,7 @@ height: 100%;
     }
 }
 @media (max-width:540px) {
-    #exclusive{
+    .exclusive{
         padding-right: 7%;
     }
    
@@ -356,7 +356,7 @@ width: 60%;
         
         height: 100px;
     }
-    #exclusive{
+    .exclusive{
         margin-right: 2%;
     }
     #sidebar.active {
