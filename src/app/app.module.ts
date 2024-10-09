@@ -9,12 +9,14 @@ import { FooterComponent } from './components/footer/footer.component';
 // import { SidebarCarouselComponent } from './components/sidebar-carousel/sidebar-carousel.component';
 import { LayoutComponent } from './layout/layout.component';
 import { RouterModule } from '@angular/router';
-// import { CarouselModule } from 'ngx-owl-carousel-o';
-// import { CarouselComponent } from './components/carousel/carousel.component';
-// import { BannerComponent } from './components/banner/banner.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { BannerComponent } from './components/banner/banner.component';
 import { HomeModule } from './pages/home/home.module';
-// import { OfferProductComponent } from './components/offer-product/offer-product.component';
-// import { BrowseByCategoriesCarouselComponent } from './components/browse-by-categories-carousel/browse-by-categories-carousel.component';
+import { CardComponent } from './components/card/card.component';
+import { HomeComponent } from './pages/home/home.component';
+import { OfferProductComponent } from './components/offer-product/offer-product.component';
+import { BrowseByCategoriesCarouselComponent } from './components/browse-by-categories-carousel/browse-by-categories-carousel.component';
 
 
 @NgModule({
@@ -24,19 +26,22 @@ import { HomeModule } from './pages/home/home.module';
     FooterComponent,
     // SidebarCarouselComponent,
     LayoutComponent,
-    // OfferProductComponent,
-    // BrowseByCategoriesCarouselComponent,
-    // CarouselComponent,
-    // BannerComponent,
+    CardComponent,
+    CarouselComponent,
+    BannerComponent,
+    HomeComponent,
+    OfferProductComponent,
+    BrowseByCategoriesCarouselComponent
 
   ],
+
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule,
-    // CarouselModule,
-    HomeModule
+    CarouselModule,
+    // HomeModule
   ],
   providers: [
     provideClientHydration()

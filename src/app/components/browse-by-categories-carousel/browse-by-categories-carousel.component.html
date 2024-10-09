@@ -1,5 +1,5 @@
-<!-- <div class="container">
-  <div class="box1">
+<div class="container">
+  <!-- <div class="box1">
     <div class="box-1-inner">
       <div class="box-1-inner-in">
         <div></div>
@@ -11,45 +11,16 @@
       <img src="icons_arrow-left.png" alt="">
       <img src="icons arrow-right.png" alt="">
     </div>
-  </div>
+  </div> -->
   <div class="box2">
-    <div class="box-2-inner" *ngFor="let data of categories " [ngClass]="{'active': selectedCategory === data.name}"
-      (click)="onSelectCategory(data.name)">
-      <img [src]="data.icon" alt="">
-      <p>{{data.name}}</p>
-    </div>
-  </div>
-</div> -->
-
-<div class="container">
-  <div class="box1">
-    <div class="box-1-inner">
-      <div class="box-1-inner-in">
-        <div></div>
-        <p>catrigies</p>
-      </div>
-      <h1>Browse By Category</h1>
-    </div>
     <div class="box-2-inner">
-      <img src="icons_arrow-left.png" alt="" class="carousel-control" (click)="carousel.prev()" *ngIf="showControls">
-      <img src="icons arrow-right.png" alt="" class="carousel-control" (click)="carousel.next()" *ngIf="showControls">
+
+      <img [src]="category.icon" alt="">
+      <p>{{category.name}}</p>
     </div>
   </div>
-
-  <div class="box2">
-    <owl-carousel-o [options]="customOptions" *ngIf="showCarousel">
-      <ng-container *ngFor="let data of categories">
-        <ng-template carouselSlide>
-          <div class="box-2-inner" (click)="onSelectCategory(data.name)">
-            <img [src]="data.icon" alt="">
-            <p>{{data.name}}</p>
-          </div>
-        </ng-template>
-      </ng-container>
-    </owl-carousel-o>
-  </div>
-
 </div>
+
 
 
 
