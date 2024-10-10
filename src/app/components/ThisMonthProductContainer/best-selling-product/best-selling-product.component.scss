@@ -1,0 +1,18 @@
+@import '../../../../styles.scss';
+
+.main-container {
+    display: flex;
+    
+    .inner-container{
+        gap: 20px;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        padding-right: 30px;
+        // flex-wrap: wrap;
+    }
+
+    padding: $core-padding;
+    width: 100vw;
+}

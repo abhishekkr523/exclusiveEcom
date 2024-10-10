@@ -19,6 +19,7 @@ import { SecondaryHeaderComponent } from './components/secondary-header/secondar
 
 import { ExploreProductCardComponent } from './components/card/ExploreProductCard/explore-product-card/explore-product-card.component';
 import { BestSellingProductComponent } from './components/ThisMonthProductContainer/best-selling-product/best-selling-product.component';
+import { BestProductCardComponent } from './components/card/BestProductCard/best-product-card/best-product-card.component';
 
 
 
@@ -37,8 +38,8 @@ import { BestSellingProductComponent } from './components/ThisMonthProductContai
     HomeComponent,
     ExploreProductCardComponent,
     SecondaryHeaderComponent,
-    BestSellingProductComponent
-    
+    BestSellingProductComponent,
+    BestProductCardComponent    
   ],
   
   imports: [

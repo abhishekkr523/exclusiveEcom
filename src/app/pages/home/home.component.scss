@@ -61,7 +61,10 @@
     z-index: -2;
     padding: 30px;
 }
-
+.simpleProduct{
+  width: 100vw;
+  padding: $core-padding;
+}
 @media (max-width: 768px) {
   .adds {
     display: flex;

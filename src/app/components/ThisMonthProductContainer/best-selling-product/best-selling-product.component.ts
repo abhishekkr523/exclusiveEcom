@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { title } from 'process';
 
 @Component({
   selector: 'app-best-selling-product',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class BestSellingProductComponent {
 
+ @Input() bestSellingProductsData:any;
+ @Input() customOptions:any;
 }

@@ -320,6 +320,10 @@ export class HomeComponent{
     title1:'Our Products',
     title2:'Explore Our Products'
   }
+  header:any={
+    title1:'This Month',
+    title2:'Best Selling Products'
+  }
   newArrival: any = {
     title1: 'Featured',
     title2: 'New Arrival',

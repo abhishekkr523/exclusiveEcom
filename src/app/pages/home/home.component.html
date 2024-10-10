@@ -10,21 +10,12 @@
   ></app-carousel>
 </div>
 
-<app-secondary-header [salesData]="newArrival" [showCarouselButton]="true"></app-secondary-header>
-<div class="mt-3">
-  <app-carousel
-    [bestSellingProductsdata]="bestSellingProducts"
-    [carouselType]="'bestSellingProduct'"
-    [customOptions]="productCustomOption"
-  ></app-carousel>
+<app-secondary-header [salesData]="header"  [showCarouselButton]="false"></app-secondary-header>
+<div >
+  <app-best-selling-product [bestSellingProductsData]="bestSellingProducts" ></app-best-selling-product>
 </div>
 
-<!-- <div class="mt-3">
-  <app-explore-product-card
-    [exploreProductsdata]="bestSellingProducts"
-   
-  ></app-explore-product-card>
-</div> -->
+
 <app-secondary-header [salesData]="exploreProducts" [showCarouselButton]="true" [showTime]="false"></app-secondary-header>
 <div class="mt-3">
   <app-carousel
@@ -34,14 +25,6 @@
   ></app-carousel>
 </div>
 
-
-<!-- <div class="mt-3">
-  <app-carousel
-    [data]="fruits"
-    [carouselType]="'nav'"
-    [customOptions]="navCustomOption"
-  ></app-carousel>
-</div> -->
 
 
 <app-secondary-header [salesData]="newArrival"  [showCarouselButton]="false"></app-secondary-header>
@@ -141,4 +124,4 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
