@@ -6,7 +6,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss'],
 })
-export class CarouselComponent implements OnInit {
+export class CarouselComponent  {
   @Input() data: any;
 
   @Input() carouselType: any;
@@ -16,14 +16,22 @@ export class CarouselComponent implements OnInit {
   @Input() className: any;
 
 
-  ngOnInit(): void {
 
 
-    // console.log('ooo', this.data);
+
+  @Input() exploreProductsdata:any;
+  @Input() bestSellingProductsdata:any;
+
+  
+  newArrival: any = {
+
+    title1:'Explore Our Products',title2:'Our Products'
+
+  };
 
 
   }
 
 
 
-}
+

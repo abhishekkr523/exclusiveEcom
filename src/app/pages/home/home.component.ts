@@ -1,32 +1,34 @@
 import { Component } from '@angular/core';
+import { title } from 'process';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
-export class HomeComponent{
-   fruits = [
-    "Apple",
-    "Banana",
-    "Orange",
-    "Mango",
-    "Grapes",
-    "Pineapple",
-    "Strawberry",
-    "Blueberry",
-    "Peach",
-    "Watermelon",
-    "Kiwi",
-    "Pomegranate",
-    "Papaya",
-    "Cherry",
-    "Lemon",
-    "Coconut",
-    "Pear",
-    "Plum",
-    "Guava",
-    "Apricot"
+export class HomeComponent {
+  hide!: boolean;
+  fruits = [
+    'Apple',
+    'Banana',
+    'Orange',
+    'Mango',
+    'Grapes',
+    'Pineapple',
+    'Strawberry',
+    'Blueberry',
+    'Peach',
+    'Watermelon',
+    'Kiwi',
+    'Pomegranate',
+    'Papaya',
+    'Cherry',
+    'Lemon',
+    'Coconut',
+    'Pear',
+    'Plum',
+    'Guava',
+    'Apricot',
   ];
   products = [
     {
@@ -172,7 +174,7 @@ export class HomeComponent{
     { name: 'Gaming', icon: 'Category-Gamepad.png' },
   ];
 
-  categoriesCustomOption ={
+  categoriesCustomOption = {
     loop: true,
     // mouseDrag: true,
     // touchDrag: true,
@@ -187,11 +189,14 @@ export class HomeComponent{
       0: {
         items: 1,
       },
-      600: {
+      300: {
         items: 2,
       },
+      600: {
+        items: 4,
+      },
       900: {
-        items: 3,
+        items: 5,
       },
       1200: {
         items: 6,
@@ -201,9 +206,178 @@ export class HomeComponent{
       // }
     },
     nav: false,
-  }
+  };
 
-  productCustomOption ={
+  bestSellingProducts = [
+    {
+      title: 'HAVIT HV-G92 Chair',
+      price: 120,
+      actualPrice: 200,
+      discount: '-40%',
+      rating: 2,
+      heartIcon: 'heart.png',
+      eyeIcon: 'eye.png',
+      productImage: 'chair.png',
+      starIcon: 'star.png',
+      percentage: 80,
+    },
+    {
+      title: 'HAVIT HV-G92 Chair',
+      price: 120,
+      actualPrice: 200,
+      discount: '-40%',
+      rating: 2,
+      heartIcon: 'heart.png',
+      eyeIcon: 'eye.png',
+      productImage: 'chair.png',
+      starIcon: 'star.png',
+      percentage: 80,
+    },
+    {
+      title: 'HAVIT HV-G92 Chair',
+      price: 120,
+      actualPrice: 200,
+      discount: '-40%',
+      rating: 2,
+      heartIcon: 'heart.png',
+      eyeIcon: 'eye.png',
+      productImage: 'chair.png',
+      starIcon: 'star.png',
+      percentage: 80,
+    },
+    {
+      title: 'HAVIT HV-G92 Chair',
+      price: 120,
+      actualPrice: 200,
+      discount: '-40%',
+      rating: 2,
+      heartIcon: 'heart.png',
+      eyeIcon: 'eye.png',
+      productImage: 'chair.png',
+      starIcon: 'star.png',
+      percentage: 80,
+    },
+  ];
+  exploreProductsdata = [
+    {
+      title: 'HAVIT HV-G92 Chair',
+      price: 120,
+      actualPrice: 200,
+      discount: '-40%',
+      rating: 2,
+      heartIcon: 'heart.png',
+      eyeIcon: 'eye.png',
+      productImage: 'chair.png',
+      starIcon: 'star.png',
+      percentage: 80,
+      colorArray: [
+        {
+          color: 'red',
+          productImage: 'chair.png',
+        },
+        {
+          color: 'blue',
+          productImage: 'keyboard.png',
+        },
+      ],
+    },
+    {
+      title: 'HAVIT HV-G92 Chair',
+      price: 120,
+      actualPrice: 200,
+      discount: '-40%',
+      rating: 2,
+      heartIcon: 'heart.png',
+      eyeIcon: 'eye.png',
+      productImage: 'chair.png',
+      starIcon: 'star.png',
+      percentage: 80,
+      colorArray: [
+        {
+          color: 'red',
+          productImage: 'chair.png',
+        },
+        {
+          color: 'blue',
+          productImage: 'keyboard.png',
+        },
+      ],
+    },
+    {
+      title: 'HAVIT HV-G92 Chair',
+      price: 120,
+      actualPrice: 200,
+      discount: '-40%',
+      rating: 2,
+      heartIcon: 'heart.png',
+      eyeIcon: 'eye.png',
+      productImage: 'chair.png',
+      starIcon: 'star.png',
+      percentage: 80,
+      colorArray: [
+        {
+          color: 'red',
+          productImage: 'chair.png',
+        },
+        {
+          color: 'blue',
+          productImage: 'keyboard.png',
+        },
+      ],
+    },
+    {
+      title: 'HAVIT HV-G92 Chair',
+      price: 120,
+      actualPrice: 200,
+      discount: '-40%',
+      rating: 2,
+      heartIcon: 'heart.png',
+      eyeIcon: 'eye.png',
+      productImage: 'chair.png',
+      starIcon: 'star.png',
+      percentage: 80,
+      colorArray: [
+        {
+          color: 'red',
+          productImage: 'chair.png',
+        },
+        {
+          color: 'blue',
+          productImage: 'keyboard.png',
+        },
+      ],
+    },
+  ];
+  salesData: any = {
+    title1: "Today's",
+    title2: 'Flash Sales',
+    title3: 'Our Products',
+    timeUnits: [
+      { title: 'Days', duration: '03' },
+      { title: 'Hours', duration: '03' },
+      { title: 'Minutes', duration: '03' },
+      { title: 'Seconds', duration: '03' },
+    ],
+  };
+
+  exploreProducts: any = {
+    title1: 'Our Products',
+    title2: 'Explore Our Products',
+  };
+  header: any = {
+    title1: 'This Month',
+    title2: 'Best Selling Products',
+  };
+  newArrival: any = {
+    title1: 'Featured',
+    title2: 'New Arrival',
+    title3: 'Explore Our Products',
+  };
+  categoryByBro: any = {
+    title1: 'Categories',
+    title2: 'Browser By Category',
+  };
+  productCustomOption = {
     loop: false,
     // mouseDrag: true,
     // touchDrag: true,
@@ -232,9 +406,14 @@ export class HomeComponent{
       // }
     },
     nav: false,
-  }
+  };
 
-  navCustomOption={
+  // browserByCategoy={
+  //   title1: 'Categories',
+  //   title2: 'Browser By Category',
+  // }
+
+  navCustomOption = {
     loop: false,
     // mouseDrag: true,
     // touchDrag: true,
@@ -263,10 +442,10 @@ export class HomeComponent{
       // }
     },
     nav: true,
-  }
+  };
 
-  handleCrauselNav(buttomType:string){
-    const previousButton:any= document.getElementsByClassName(buttomType);
-    previousButton[0].click()
+  handleCrauselNav(buttomType: string) {
+    const previousButton: any = document.getElementsByClassName(buttomType);
+    previousButton[0].click();
   }
 }

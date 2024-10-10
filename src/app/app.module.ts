@@ -4,8 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './layout/components/header/header.component';
+import { FooterComponent } from './layout/components/footer/footer.component';
 // import { SidebarCarouselComponent } from './components/sidebar-carousel/sidebar-carousel.component';
 import { LayoutComponent } from './layout/layout.component';
 import { RouterModule } from '@angular/router';
@@ -17,6 +17,15 @@ import { CardComponent } from './components/card/card.component';
 import { HomeComponent } from './pages/home/home.component';
 import { OfferProductComponent } from './components/offer-product/offer-product.component';
 import { BrowseByCategoriesCarouselComponent } from './components/browse-by-categories-carousel/browse-by-categories-carousel.component';
+import { SecondaryHeaderComponent } from './components/secondary-header/secondary-header.component';
+
+import { ExploreProductCardComponent } from './components/card/ExploreProductCard/explore-product-card/explore-product-card.component';
+import { BestSellingProductComponent } from './components/ThisMonthProductContainer/best-selling-product/best-selling-product.component';
+import { BestProductCardComponent } from './components/card/BestProductCard/best-product-card/best-product-card.component';
+import { CartListComponent } from './layout/components/cart-list/cart-list.component';
+
+
+
 
 
 @NgModule({
@@ -31,8 +40,13 @@ import { BrowseByCategoriesCarouselComponent } from './components/browse-by-cate
     BannerComponent,
     HomeComponent,
     OfferProductComponent,
-    BrowseByCategoriesCarouselComponent
+    BrowseByCategoriesCarouselComponent,
 
+    ExploreProductCardComponent,
+    SecondaryHeaderComponent,
+    BestSellingProductComponent,
+    BestProductCardComponent,
+    CartListComponent
   ],
 
   imports: [

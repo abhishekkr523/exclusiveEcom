@@ -1,15 +1,12 @@
-.container {
+.container-outlet {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
-  // width: 1170px;
+  margin: 34px 8.78% 41px;
   height: 500px;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgb(0, 0, 0);
   margin-bottom: 140px;
-  // padding-left: 4.78%;
-  // padding-right: 4.78%;
-  padding: 34px 4.78% 41px;
+  padding: 0px 4.78% 41px;
 
   .box1 {
     width: 50%;
@@ -30,7 +27,7 @@
 
     .title {
       width: 100%;
-      padding-right: 23%;
+      padding-right: 8%;
 
       h1 {
         //styleName: Heading/48PX SemiBold;
@@ -74,7 +71,7 @@
       .hours,
       .Minutes,
       .second {
-        width: 62px;
+        width: 20%;
         height: 62px;
         background-color: rgba(255, 255, 255, 1);
         border-radius: 50%;
@@ -83,7 +80,7 @@
         justify-content: space-evenly;
         align-items: center;
         color: black;
-        padding: 14px 7px;
+        padding: 14px 3px;
         div {
           width: 100%;
           height: 100%;
@@ -150,6 +147,402 @@
   }
 }
 
+@media (max-width: 1200px) and (min-width: 1024px) {
+  .container-outlet {
+    // justify-content: space-between;
+    //     display: flex;
+    //     align-items: center;
+    padding-right: 12%;
+    height: 434px;
+
+    .box1 {
+      width: 40%;
+
+      height: 100%;
+      justify-content: space-between;
+
+      .p1 {
+        font-size: 100%;
+      }
+
+      .title {
+        padding-right: 4%;
+        width: 100%;
+
+        h1 {
+          font-size: 30px;
+
+          line-height: 41px;
+        }
+      }
+      .btnn {
+        width: 169px;
+        height: 50px;
+
+        a {
+          color: white;
+          text-align: center;
+        }
+      }
+      .time {
+        width: 100%;
+        height: 55px;
+        display: flex;
+
+        .days,
+        .hours,
+        .Minutes,
+        .second {
+          // border-radius: 45%;
+          // padding: 14px 3px;
+          div {
+            width: 100%;
+            height: 100%;
+
+            padding-left: 3px;
+            .pp1-1 {
+              font-size: 10px;
+            }
+            .pp {
+              font-size: 12px;
+            }
+            .pp1 {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .box2 {
+      width: 40%;
+      height: 100%;
+
+      .image {
+        width: 100%;
+        // position: relative; // Relative positioning for the container
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+
+        img {
+          position: absolute; // Absolute positioning for the images
+          // width: 100%;
+        }
+
+        img:first-child {
+          margin-right: 35%;
+          width: 170%;
+          border-radius: 20%;
+          height: 434px;
+        }
+
+        img:last-child {
+          // z-index: 5;
+          width: 160%;
+          padding-left: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 780px) {
+  .container-outlet {
+    // justify-content: space-between;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    height: 700px;
+
+    .box1 {
+      width: 100%;
+
+        display: flex;
+        justify-content: space-evenly;
+        gap: 18px;
+      height: 50%;
+
+      .p1 {
+        // font-size: 100%;
+      }
+
+      .title {
+        width: 100%;
+
+        h1 {
+          font-size: 30px;
+
+          line-height: 41px;
+        }
+      }
+      .btnn {
+        // width: 169px;
+        // height: 50px;
+
+        a {
+          color: white;
+          text-align: center;
+        }
+      }
+      .time {
+        width: 100%;
+
+        .days,
+        .hours,
+        .Minutes,
+        .second {
+          width: 10%;
+
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-right: 10px;
+            .pp1-1 {
+              font-size: 10px;
+              padding-right: 64%;
+            }
+            .pp {
+              font-size: 12px;
+              padding-right: 59%;
+            }
+            .pp1 {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .box2 {
+      height: 50%;
+      // width: 100%;
+
+      .image {
+        padding-left: 49%;
+        padding-top: 33%;
+
+        img {
+          position: absolute; // Absolute positioning for the images
+          // width: 100%;
+        }
+
+        img:first-child {
+          // margin-bottom: 62%;
+          // width: 175%;
+          // padding-left: 12%;
+          display: none;
+        }
+
+        img:last-child {
+          padding: 0% 25% 15% 0%;
+          width: 191%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) and (min-width: 592px) {
+  .container-outlet {
+    // justify-content: space-between;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    height: 700px;
+
+    .box1 {
+      width: 100%;
+
+        display: flex;
+        justify-content: space-evenly;
+        gap: 18px;
+      height: 50%;
+
+      .p1 {
+        // font-size: 100%;
+      }
+
+      .title {
+        width: 100%;
+
+        h1 {
+          font-size: 30px;
+
+          line-height: 41px;
+        }
+      }
+      .btnn {
+        // width: 169px;
+        // height: 50px;
+
+        a {
+          color: white;
+          text-align: center;
+        }
+      }
+      .time {
+        width: 100%;
+
+        .days,
+        .hours,
+        .Minutes,
+        .second {
+          width: 13%;
+
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-right: 7px;
+            .pp1-1 {
+              font-size: 10px;
+              padding-right: 51%;
+            }
+            .pp {
+              font-size: 12px;
+              padding-right: 43%;
+            }
+            .pp1 {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .box2 {
+      height: 50%;
+      // width: 100%;
+
+      .image {
+        padding-left: 49%;
+        padding-top: 33%;
+
+        img {
+          position: absolute; // Absolute positioning for the images
+          // width: 100%;
+        }
+
+        img:first-child {
+          // margin-bottom: 62%;
+          // width: 175%;
+          // padding-left: 12%;
+          display: none;
+        }
+
+        img:last-child {
+          padding: 0% 36% 0% 0%;
+          width: 256%;
+        }
+      }
+    }
+  }
+
+}
 
 
+@media screen and (max-width: 592px) {
+  .container-outlet {
+    // justify-content: space-between;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 
+    height: 700px;
+
+    .box1 {
+      width: 100%;
+
+        display: flex;
+        justify-content: space-evenly;
+        gap: 18px;
+      height: 50%;
+
+      .p1 {
+        // font-size: 100%;
+      }
+
+      .title {
+        width: 100%;
+
+        h1 {
+          font-size: 30px;
+
+          line-height: 41px;
+        }
+      }
+      .btnn {
+        // width: 169px;
+        // height: 50px;
+
+        a {
+          color: white;
+          text-align: center;
+        }
+      }
+      .time {
+        width: 100%;
+
+        .days,
+        .hours,
+        .Minutes,
+        .second {
+          width: 17%;
+
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-right: 7px;
+            .pp1-1 {
+              font-size: 10px;
+              padding-right: 40%;
+            }
+            .pp {
+              font-size: 12px;
+              padding-right: 43%;
+            }
+            .pp1 {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .box2 {
+      height: 50%;
+      // width: 100%;
+
+      .image {
+        padding-left: 49%;
+        padding-top: 33%;
+
+        img {
+          position: absolute; // Absolute positioning for the images
+          // width: 100%;
+        }
+
+        img:first-child {
+          // margin-bottom: 62%;
+          // width: 175%;
+          // padding-left: 12%;
+          display: none;
+        }
+
+        img:last-child {
+          padding: 0% 36% 0% 0%;
+          width: 256%;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,33 @@
+<div class="flash-sale d-flex " >
+  <div class="sub-flash-sale d-flex align-items-end ">
+    <div class="container-left">
+      <div class="top d-flex ">
+        <div class="empty-div"></div>
+        <!-- Dynamically display today's text -->
+        <div class="sale">{{ salesData.title1 }}</div>
+      </div>
+      <!-- Dynamically display flash sales text -->
+      <div class="buttom">{{ salesData.title2}}</div>
+      <!-- <div class="buttom">{{ salesData.title3}}</div> -->
+
+    </div>
+
+    <div class="container-right " *ngIf="showTime">
+      <!-- Loop through the time units array and display data -->
+      <div *ngFor="let sale of salesData.timeUnits">
+        <div class="title">{{ sale.title }}</div>
+        <div class="duration">{{ sale.duration }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carouselButton" *ngIf="showCarouselButton"
+    >
+    <div style="width: 16px; height: 14px; padding-right: 45px">
+      <img src="left_arrow.png" alt="Left arrow" (click)="handleCrauselNav('owl-prev')" />
+    </div>
+    <div style="width: 16px; height: 14px">
+      <img src="right_arrow.png" alt="Right arrow" (click)="handleCrauselNav('owl-next')" />
+    </div>
+  </div>
+</div>
