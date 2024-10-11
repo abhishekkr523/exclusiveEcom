@@ -1,6 +1,6 @@
 
-   <div class="flash-sale d-flex" style="height: 103px; width: 100%; margin-top: 130px">
-    <div class="sub-flash-sale d-flex align-items-end justify-content-between">
+   <div class="flash-sale d-flex" >
+    <div class="sub-flash-sale ">
       <div class="container-left">
         <div class="top d-flex justify-content-between">
           <div class="empty-div"></div>
@@ -22,10 +22,12 @@
   
     <div class="carouselButton" *ngIf="showCarouselButton" style="width: 53%; display: flex; justify-content: end; align-items: end">
       <div style="width: 16px; height: 14px; padding-right: 45px">
-        <img src="left_arrow.png" alt="Left arrow" (click)="handleCrauselNav('owl-prev')" />
+        <!-- <img src="left_arrow.png" alt="Left arrow" (click)="handleCrauselNav('owl-prev')" /> -->
+        <i class="fa-solid fa-arrow-left-long" (click)="handleCrauselNav('owl-prev')"></i>
       </div>
       <div style="width: 16px; height: 14px">
-        <img src="right_arrow.png" alt="Right arrow" (click)="handleCrauselNav('owl-next')" />
+        <!-- <img src="right_arrow.png" alt="Right arrow" (click)="handleCrauselNav('owl-next')" /> -->
+        <i class="fa-solid fa-arrow-right-long" (click)="handleCrauselNav('owl-next')"></i>
       </div>
     </div>
   </div>

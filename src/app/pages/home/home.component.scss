@@ -5,6 +5,9 @@
     display: flex; justify-content: space-between; 
     padding: $core-padding;
     width: 100%;
+    .app-sidebar{
+        width: 18%;
+    }
     .app-banner{
         width: 78%;
     }
@@ -71,9 +74,9 @@
 }
 @media (max-width: 1200px) {
    .bannerSection{
-     
+     flex-direction: column;
     .app-sidebar{
-        display:none;
+        width: 0%;
     }
     .app-banner{
         width: 100%;
@@ -100,8 +103,10 @@
 @media (max-width: 500px) {
 
     .container-right-buttom {
-        // gap: 25px;
+        gap: 25px;
     flex-direction: column;
+    // margin-bottom: 53px;
+
     .continer-right-buttom-left {
       width: 100%;
     }

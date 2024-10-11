@@ -1,19 +1,19 @@
 <div class="bannerSection">
-  <!-- <div> -->
-  <app-sidebar class="app-sidebar" style="width: 18%"></app-sidebar>
-  <!-- </div> -->
-  <!-- <div> -->
+
+  <app-sidebar class="app-sidebar" ></app-sidebar>
+ 
   <app-banner class="app-banner"></app-banner>
-  <!-- </div> -->
+ 
 </div>
 
-<app-secondary-header [salesData]="salesData"></app-secondary-header>
+<app-secondary-header [salesData]="salesData" [showCarouselButton]="true"></app-secondary-header>
 
 <div class="mt-3">
   <app-carousel
     [data]="products"
     [carouselType]="'homeData'"
     [customOptions]="productCustomOption"
+    
   ></app-carousel>
 </div>
 

@@ -2,8 +2,13 @@
 @import "../../../styles.scss";
 
 .flash-sale {
+    width: 100%; 
+    margin-top: 130px;
   padding: $core-padding;
   .sub-flash-sale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 47%;
     height: 100%;
     .container-left {
@@ -35,6 +40,7 @@
         font-size: 36px;
         font-weight: 600;
         font-family: inter;
+        width: 300px;
       }
     }
     .container-right {
@@ -66,6 +72,7 @@
   .flash-sale {
     .sub-flash-sale {
       width: 100%;
+      flex-direction: column;
     }
   }
 }

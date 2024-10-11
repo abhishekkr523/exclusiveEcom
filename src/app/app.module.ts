@@ -17,6 +17,7 @@ import { CardComponent } from './components/card/card.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SecondaryHeaderComponent } from './components/secondary-header/secondary-header.component';
 import { SidebarComponent } from './pages/home/components/sidebar/sidebar.component';
+import { UserAuthComponent } from './pages/user-auth/user-auth.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { SidebarComponent } from './pages/home/components/sidebar/sidebar.compon
     BannerComponent,
     HomeComponent,
     SecondaryHeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    UserAuthComponent
     
   ],
   

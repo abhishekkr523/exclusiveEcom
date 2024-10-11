@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,9 +9,19 @@ import { Component, HostListener } from '@angular/core';
 export class HeaderComponent {
   navItems = ['Home', 'Contact', 'About', 'Sign Up'];
   activeItem!: string;
+  constructor(private router: Router) { }
 
   setActive(item: string) {
     this.activeItem = item;
+    
+    // Navigate to userAuth component when 'Sign Up' is clicked
+    if (item === 'Sign Up') {
+      this.router.navigate(['/userAuth']);
+    }
+
+    if (item === 'Home') {
+      this.router.navigate(['/home']);
+    }
   }
   // toggleMenu() {
   //   const sidebar = document.getElementById('sidebar');

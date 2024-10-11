@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
+import { UserAuthComponent } from './pages/user-auth/user-auth.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'userAuth', component: UserAuthComponent},
   {path: '**', redirectTo: '404'}
 ];
 // const routes: Routes = [

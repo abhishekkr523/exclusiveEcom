@@ -6,6 +6,9 @@
   height: 100%;
   padding-top: 38px;
 }
+#carouselExampleCaptions{
+    height: auto;
+}
 .carouser-container{
     padding-right: 5rem;
                   padding-left: 5rem;
@@ -81,4 +84,12 @@ font-size: 14px;
 .carousel-item{
     height: 100%;
 }
+}
+
+@media (max-width: 1200px) {
+    .carol {
+        width: 100%;
+        height: 100%;
+        padding-top: 38px;
+      } 
 }

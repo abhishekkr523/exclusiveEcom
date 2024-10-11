@@ -29,8 +29,8 @@
                         {{ item.shopNowText }} <span><img [src]="item.buttonIcon" alt="button-icon"></span>
                       </h6>
                     </div>
-                    <div class="carouser-container-right" style="width: 50%; height: 100%;">
-                      <img [src]="item.image" alt="carousel-image" style="width: 100%;">
+                    <div class="carouser-container-right" style="width: 50%; height: 200px;" [ngStyle]="{'background-image': 'url(' + item.image + ')', 'background-size': 'contain', 'background-position': 'center', 'background-repeat': 'no-repeat', }">
+                      <!-- <img [src]="item.image" alt="carousel-image" style="width: 100%;"> -->
                     </div>
                   </div>
                 </div>

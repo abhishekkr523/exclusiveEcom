@@ -1,8 +1,11 @@
-
 <div class="side-bar">
-    <ul>
-        <li>Woman’s Fashion <span><img src="Vector (5).png" alt="kk"></span></li>
-        <li>Men’s Fashion <span><img src="Vector (5).png" alt="kk"></span></li>
+    <div style="background: #ffffff; ">
+    <div class="hamburger" (click)="toggleMenu()">
+        <i class="fa-solid fa-bars" style="font-size: 20px;"></i>
+    </div>
+    <ul [ngClass]="{ 'active': isMenuOpen }">
+        <li>Woman’s Fashion <span><i class="fa-solid fa-chevron-right"></i></span></li>
+        <li>Men’s Fashion <span><i class="fa-solid fa-chevron-right"></i></span></li>
         <li>Electronics</li>
         <li>Home & Lifestyle</li>
         <li>Medicine</li>
@@ -11,4 +14,5 @@
         <li>Groceries & Pets</li>
         <li>Health & Beauty</li>
     </ul>
+    </div>
 </div>
