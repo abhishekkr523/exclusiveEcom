@@ -13,7 +13,7 @@ export class SecondaryHeaderComponent {
 
   @Input() showCarouselButton:any;
   ngOnInit(): void {
-    console.log("kkk",this.salesData)
+    // console.log("kkk",this.salesData)
   }
 
   handleCrauselNav(buttomType:string){

@@ -15,6 +15,8 @@ import { BannerComponent } from './components/banner/banner.component';
 import { HomeModule } from './pages/home/home.module';
 import { CardComponent } from './components/card/card.component';
 import { HomeComponent } from './pages/home/home.component';
+import { OfferProductComponent } from './components/offer-product/offer-product.component';
+import { BrowseByCategoriesCarouselComponent } from './components/browse-by-categories-carousel/browse-by-categories-carousel.component';
 import { SecondaryHeaderComponent } from './components/secondary-header/secondary-header.component';
 
 import { ExploreProductCardComponent } from './components/card/ExploreProductCard/explore-product-card/explore-product-card.component';
@@ -25,6 +27,11 @@ import { CheckOutComponent } from './pages/CheckOutPage/check-out/check-out.comp
 import { BreadcrumbComponent } from './components/BreadCrumb/breadcrumb/breadcrumb.component';
 import { CartComponent } from './components/Cart/cart/cart.component';
 import { MyaccountComponent } from './components/Myacount/myaccount/myaccount.component';
+import { CartListComponent } from './layout/components/cart-list/cart-list.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -37,6 +44,9 @@ import { MyaccountComponent } from './components/Myacount/myaccount/myaccount.co
     CarouselComponent,
     BannerComponent,
     HomeComponent,
+    OfferProductComponent,
+    BrowseByCategoriesCarouselComponent,
+
     ExploreProductCardComponent,
     SecondaryHeaderComponent,
     BestSellingProductComponent,
@@ -45,9 +55,10 @@ import { MyaccountComponent } from './components/Myacount/myaccount/myaccount.co
     // RoadmapComponent,
     BreadcrumbComponent,
     CartComponent,
-    MyaccountComponent    
+    MyaccountComponent,
+    CartListComponent
   ],
-  
+
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

@@ -7,14 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   ngOnInit(): void {
-    console.log('Card Product:', this.product);
+    // console.log('Card Product:', this.product);
   }
   @Input() product: any = {  };
   @Input() simpleProductist: any = {  };
   @Input() simpleProductistContainer:any;
   @Input() carouselType: any;
   @Input() exploreProducts?: string;
-  
+
 
   // Returns an array to dynamically generate filled stars based on the rating
   getFilledStars(rating: number): any[] {

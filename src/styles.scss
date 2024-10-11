@@ -47,19 +47,19 @@ text-decoration: underline;
 
 #carouselExampleCaptions{
     height:300px;
-  
+
 }
-.owl-carousel .owl-item {
+.productsSccs .owl-carousel .owl-item {
     width: 286px !important;
     height: 350px;
     // padding-right:33px;
 }
-.owl-carousel,.owl-stage{
+.productsSccs .owl-carousel .owl-stage{
     display: flex;
     // width: 100vw;
     gap: 17px;
     // justify-content: space-between;
-   
+
 }
 .owl-nav,.owl-dots{
     display: none;

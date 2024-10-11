@@ -1,4 +1,4 @@
-<div class="main-container">
+<div class="main-container " [class]="className">
   <owl-carousel-o [options]="customOptions">
     @switch(carouselType){
     @case('homeData'){
@@ -6,7 +6,14 @@
       <app-card [product]="product"></app-card>
     </ng-template>
     }
-   
+    @case('categoriesData'){
+    <ng-template carouselSlide *ngFor="let category of data">
+      <!-- {{category.name}} -->
+      <app-browse-by-categories-carousel [category]="category"></app-browse-by-categories-carousel>
+
+    </ng-template>
+  }
+
     @case('exploreProducts'){
     <ng-template carouselSlide *ngFor="let products of exploreProductsdata">
       <!-- {{products.title}} -->
