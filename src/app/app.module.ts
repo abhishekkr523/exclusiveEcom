@@ -20,10 +20,11 @@ import { SecondaryHeaderComponent } from './components/secondary-header/secondar
 import { ExploreProductCardComponent } from './components/card/ExploreProductCard/explore-product-card/explore-product-card.component';
 import { BestSellingProductComponent } from './components/ThisMonthProductContainer/best-selling-product/best-selling-product.component';
 import { BestProductCardComponent } from './components/card/BestProductCard/best-product-card/best-product-card.component';
-
-
-
-
+import { CheckOutComponent } from './pages/CheckOutPage/check-out/check-out.component';
+// import { RoadmapComponent } from './components/RoadMap/roadmap/roadmap.component';
+import { BreadcrumbComponent } from './components/BreadCrumb/breadcrumb/breadcrumb.component';
+import { CartComponent } from './components/Cart/cart/cart.component';
+import { MyaccountComponent } from './components/Myacount/myaccount/myaccount.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,12 @@ import { BestProductCardComponent } from './components/card/BestProductCard/best
     ExploreProductCardComponent,
     SecondaryHeaderComponent,
     BestSellingProductComponent,
-    BestProductCardComponent    
+    BestProductCardComponent,
+    CheckOutComponent,
+    // RoadmapComponent,
+    BreadcrumbComponent,
+    CartComponent,
+    MyaccountComponent    
   ],
   
   imports: [

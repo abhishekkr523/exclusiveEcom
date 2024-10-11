@@ -1,0 +1,113 @@
+<div class="primary-container">
+    <app-breadcrumb></app-breadcrumb>
+    
+    <div class="checkout-container">
+        <div class="container-first-half">
+            <div class="container-first-half-left">
+
+                <span class="billing">Billing Details</span>
+                <div>
+                    <form action="" class="form">
+                        <div class="form-group">
+
+                            <label for="">First Name <span>*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+
+                            <label for="">Company Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Street Address</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+
+                            <label for="">Apartment, floor, etc. (optional)</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+
+                            <label for="">Town/City<span>*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+
+                            <label for="">Phone Number<span>*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+
+                            <label for="">Email Address<span>*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+                            <div class="additional">
+                                <input type="checkbox">
+                                <label for="">Save this information for faster check-out next time</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-second-half">
+            
+            <div  class="container-second-half-upper">
+
+
+                <div  class="container-second-half-first" *ngFor="let product of products">
+                    <span class="image">
+                        <img src="{{product.image}}" alt="">
+                    </span>
+                    <span class="product-name">
+                        {{product.name}}
+                    </span>
+                    <span class="product-price">
+                        ${{product.price}}
+                    </span>
+
+                </div>
+                <div class="container-second-half-second">
+                    <span>
+                        Subtotal
+                    </span>
+                    <span>
+                        $1750
+                    </span>
+                </div>
+                <div class="container-second-half-third">
+                    <span>
+                        Shipping
+                    </span>
+                    <span>
+                        Free
+                    </span>
+                   
+                </div>
+                <div class="container-second-half-forth">
+                    <span>Total</span>
+                    <span>$1750</span>
+                </div>
+                <div>
+                    <div class="radio-btn">
+                        <input type="radio" name="option" id="option1"> <label for="option1">Bank</label>
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+                <div>
+                    <input type="radio" name="option" id="option2"> <label for="option2">Cash On Delivery</label>
+
+                </div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</div>
