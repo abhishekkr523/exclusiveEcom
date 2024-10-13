@@ -32,7 +32,7 @@
         Enter your details below
       </div>
 
-      <form>
+      <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
         <!-- Name field only for Sign Up -->
         <div
           *ngIf="isSignUp"
@@ -40,6 +40,8 @@
           style="margin-top: 25px; border-bottom: 2px solid #ccc"
         >
           <input
+          [(ngModel)]="user.name"
+          name="name"
             type="text"
             class="form-control"
             style="
@@ -57,6 +59,8 @@
         <!-- Email/Phone field -->
         <div class="" style="margin-top: 25px; border-bottom: 2px solid #ccc">
           <input
+          [(ngModel)]="user.emailOrPhone"
+          name="emailOrPhone"
             type="email"
             class="form-control"
             style="
@@ -75,6 +79,8 @@
         <!-- Password field -->
         <div class="" style="margin-top: 25px; border-bottom: 2px solid #ccc">
           <input
+          [(ngModel)]="user.password"
+          name="password"
             type="password"
             class="form-control"
             style="

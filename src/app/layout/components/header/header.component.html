@@ -1,64 +1,162 @@
 <div class="head">
-    <div class="head1 ">
-        <div class="head1center">
-            <div class="sale">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <span
-                    style="text-decoration: underline;">ShopNow</span>
-            </div>
-            <span class="language-btn">
-                <button class="dropdown-btn" type="button" id="staticDropdownButton" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    English <span><img src="DropDown.png" alt=""></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="staticDropdownButton">
-                    <li><a class="dropdown-item" href="#">Option 1</a></li>
-                    <li><a class="dropdown-item" href="#">Option 2</a></li>
-                    <li><a class="dropdown-item" href="#">Option 3</a></li>
-                </ul>
-            </span>
-        </div>
+  <div class="head1">
+    <div class="head1center">
+      <div class="sale">
+        Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        <span style="text-decoration: underline">ShopNow</span>
+      </div>
+      <span class="language-btn">
+        <button
+          class="dropdown-btn"
+          type="button"
+          id="staticDropdownButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          English <span><img src="DropDown.png" alt="" /></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="staticDropdownButton">
+          <li><a class="dropdown-item" href="#">Option 1</a></li>
+          <li><a class="dropdown-item" href="#">Option 2</a></li>
+          <li><a class="dropdown-item" href="#">Option 3</a></li>
+        </ul>
+      </span>
     </div>
-    <div class="head2">
-        <div class="head2center">
-            <span id="exclusive">Exclusive</span>
+  </div>
+  <div class="head2">
+    <div class="head2center">
+      <span id="exclusive">Exclusive</span>
 
-            <div class="head2mid" >
-                <div id="navItems">
-                    <div *ngFor="let item of navItems" (click)="setActive(item)"
-                        [ngClass]="{'active': activeItem === item}" class="nav-item">
-                        {{ item }}
-                    </div>
-                </div>
+      <div class="head2mid">
+     
+        <div id="navItems">
+            <div
+              *ngFor="let item of navItems"
+              (click)="setActive(item)"
+              [ngClass]="{ active: activeItem === item }"
+              class="nav-item"
+              [routerLink]="getRouterLink(item)"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
+              {{ item }}
             </div>
-            <div class="head2end">
-                <div class="searchInput">
-                    <input type="text" placeholder="What are you looking for?" class="searchbar">
-                    <span><img src="search.png" alt=""></span>
-                </div>
-                <div class="addList">
-                    <span id="wishlist" class="additional"><img src="Wishlist.png" alt=""></span>
-                    <span id="cart" class="additional"><img src="Cart1 with buy.png" alt=""></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" fill="currentColor" id="hamburger" (click)="toggleSidebar()" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                      </svg>
-                </div>
-                <!-- Hamburger button -->
-                <!-- <div class="hamburger" id="hamburger" (click)="toggleSidebar()">
+          </div>
+          </div>
+      <div class="head2end">
+        <div class="searchInput">
+          <input
+            type="text"
+            placeholder="What are you looking for?"
+            class="searchbar"
+          />
+          <span><img src="search.png" alt="" /></span>
+        </div>
+        <div class="addList">
+          <span id="wishlist" class="additional"
+            ><img src="Wishlist.png" alt=""
+          /></span>
+          <span id="cart" class="additional"
+            ><img src="Cart1 with buy.png" alt=""
+          /></span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="32"
+            fill="currentColor"
+            id="hamburger"
+            (click)="toggleSidebar()"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </div>
+        <!-- Hamburger button -->
+        <!-- <div class="hamburger" id="hamburger" (click)="toggleSidebar()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div> -->
-                <!-- <i class="bi bi-list" id="hamburger" (click)="toggleSidebar()"></i> -->
-                
-                <div class="head2mid" id="sidebar" [class.active]="isSidebarOpen" (click)="$event.stopPropagation()">
-                    <div id="innerSidebar">
-                        <div *ngFor="let item of navItems" (click)="setActive(item)"
-                            [ngClass]="{'active': activeItem === item}" class="nav-item">
-                            {{ item }}
-                        </div>
-                    </div>
-                </div>
+        <!-- <i class="bi bi-list" id="hamburger" (click)="toggleSidebar()"></i> -->
 
+        <div
+          class="head2mid"
+          id="sidebar"
+          [class.active]="isSidebarOpen"
+          (click)="$event.stopPropagation()"
+        >
+          <div id="innerSidebar">
+            <div
+              *ngFor="let item of navItems"
+              (click)="setActive(item)"
+              [ngClass]="{ active: activeItem === item }"
+              class="nav-item"
+            >
+              {{ item }}
             </div>
+          </div>
         </div>
+      </div>
+
+     
+      <div class="dropdown  user" style="z-index: 8" *ngIf="userLogin">
+        <button
+          class="btn"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          style="
+          width: 32px;
+          height: 32px;
+          background: rgba(219, 68, 68, 1);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+        >
+        <i class="fa-regular fa-user"></i>
+        </button>
+        <ul
+          class="dropdown-menu"
+          aria-labelledby="dropdownMenuButton"
+          style="
+          padding: 15px;
+            backdrop-filter: blur(50px);
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            color: #ffffff;
+            background-color: rgba(21, 21, 22, 0.4);
+          "
+        >
+          <li class="d-flex justify-content-center">
+            <i class="fa-regular fa-user"></i>
+            <a class="dropdown-item" style="color: #ffffff; font-size: 14px;" routerLink="home/myAccount">Manage My Account</a>
+          </li>
+          <li class="d-flex">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <a class="dropdown-item" style="color: #ffffff; font-size: 14px;" href="#">My Order</a>
+          </li>
+          <li class="d-flex">
+            <i class="fa-solid fa-xmark"></i>
+            <a class="dropdown-item" style="color: #ffffff; font-size: 14px;" href="#">My Cancellations</a>
+          </li>
+          <li class="d-flex">
+            <i class="fa-regular fa-star"></i>
+            <a class="dropdown-item" style="color: #ffffff; font-size: 14px;" href="#">My Reviews</a>
+          </li>
+          <li class="d-flex">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <a class="dropdown-item" style="color: #ffffff; font-size: 14px;" (click)="logout()">Logout</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>
