@@ -23,13 +23,11 @@ import { ExploreProductCardComponent } from './components/card/ExploreProductCar
 import { BestSellingProductComponent } from './components/ThisMonthProductContainer/best-selling-product/best-selling-product.component';
 import { BestProductCardComponent } from './components/card/BestProductCard/best-product-card/best-product-card.component';
 import { CheckOutComponent } from './pages/CheckOutPage/check-out/check-out.component';
-// import { RoadmapComponent } from './components/RoadMap/roadmap/roadmap.component';
-import { BreadcrumbComponent } from './components/BreadCrumb/breadcrumb/breadcrumb.component';
-import { CartComponent } from './components/Cart/cart/cart.component';
-import { MyaccountComponent } from './components/Myacount/myaccount/myaccount.component';
+
 import { CartListComponent } from './layout/components/cart-list/cart-list.component';
-
-
+import { BreadcrumbModule} from '@syncfusion/ej2-angular-navigations'
+// import {BreadcrumbComponent} from 'xng-breadcrumb'
+import {NgDynamicBreadcrumbModule} from "ng-dynamic-breadcrumb";
 
 
 
@@ -52,10 +50,7 @@ import { CartListComponent } from './layout/components/cart-list/cart-list.compo
     BestSellingProductComponent,
     BestProductCardComponent,
     CheckOutComponent,
-    // RoadmapComponent,
-    BreadcrumbComponent,
-    CartComponent,
-    MyaccountComponent,
+
     CartListComponent
   ],
 
@@ -65,6 +60,9 @@ import { CartListComponent } from './layout/components/cart-list/cart-list.compo
     AppRoutingModule,
     RouterModule,
     CarouselModule,
+    BreadcrumbModule,
+    NgDynamicBreadcrumbModule
+    // BreadcrumbComponent
     // HomeModule
   ],
   providers: [

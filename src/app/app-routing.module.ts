@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'cartList', component: CartListComponent},
   // {path: 'account/myaccount/product/viewcart/checkout',component:CheckOutComponent },
   // { path: 'viewcart', component: CartComponent, data: { breadcrumb: 'View Cart' } },
-  { path: 'checkout', component: CheckOutComponent, data: { breadcrumb: 'Checkout' } },
+  { path: 'account/myaccount/product/cart/checkout', component: CheckOutComponent, data: { breadcrumb: 'Checkout' } },
   { path: 'account', component: MyaccountComponent, data: { breadcrumb: 'Account' }},
   // { path: 'account/myaccount', component: MyAccountComponent, data: { breadcrumb: 'My Account' } },
   // { path: 'account/myaccount/product', component: ProductComponent, data: { breadcrumb: 'Product' } },

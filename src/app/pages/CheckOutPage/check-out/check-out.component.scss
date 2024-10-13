@@ -1,4 +1,7 @@
 @import '../../../../styles.scss';
+@import '../../../../../node_modules/@syncfusion/ej2-icons/styles/material.scss';
+// @import '/node_modules/@syncfusion/ej2-angular-base/styles/material.scss';
+// @import '../../../../../node_modules/@syncfusion/ej2-navigations/styles/material.scss';
 .primary-container{
     padding: $core-padding;
     .checkout-container{
@@ -127,4 +130,8 @@
             
         }
     }
+}
+ol{
+    display: flex;
+    justify-content: space-between;
 }
