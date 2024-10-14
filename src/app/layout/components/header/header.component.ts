@@ -13,16 +13,25 @@ export class HeaderComponent implements OnInit {
   isSidebarOpen = false;
 
 
+  jumpToWishlist()
+  {
+    this.router.navigate(['home/wishList']);
+  }
   jumpToCart() {
-    this.router.navigate(['/cartList']); }// Navigate to the 'cart' page}
+    this.router.navigate(['home/cart']);
+  } // Navigate to the 'cart' page}
+
+
   constructor(private router: Router, private authService: AuthService) {}
   userLogin: any;
   ngOnInit(): void {
-    const key = JSON.parse(localStorage.getItem('key') || 'null');
-    this.userLogin=key;
-    // this.authService.isLoggedIn.subscribe((data)=>{
-    //   this.userLogin = data;
-    // })
+    if (typeof localStorage !== 'undefined') {
+      const key = JSON.parse(localStorage.getItem('key') || 'null');
+      this.userLogin = key;
+      // this.authService.isLoggedIn.subscribe((data)=>{
+      //   this.userLogin = data;
+      // })
+    }
   }
   setActive(item: string) {
     this.activeItem = item;
@@ -45,8 +54,6 @@ export class HeaderComponent implements OnInit {
         return '';
     }
   }
-
-
 
   // Toggle sidebar when clicking the hamburger icon
   toggleSidebar() {
@@ -86,11 +93,9 @@ export class HeaderComponent implements OnInit {
     }
   }
 
- 
-
   logout() {
     // Remove specific data from localStorage
-    localStorage.removeItem('users'); 
+    localStorage.removeItem('users');
     localStorage.removeItem('key');
     // Optional: Redirect to the login page
     this.router.navigate(['/userAuth']);

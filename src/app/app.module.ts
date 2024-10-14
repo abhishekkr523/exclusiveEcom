@@ -45,7 +45,11 @@ import { BestProductCardComponent } from './components/card/BestProductCard/best
 import { CheckOutComponent } from './pages/CheckOutPage/check-out/check-out.component';
 
 import { CartListComponent } from './layout/components/cart-list/cart-list.component';
-import { BreadcrumbModule} from '@syncfusion/ej2-angular-navigations'
+import { WishListPageComponent } from './pages/wish-list-page/wish-list-page.component';
+import { WishListCompComponent } from './components/wish-list-comp/wish-list-comp.component';
+import { WishListBoxComponent } from './components/card/wish-list-box/wish-list-box.component';
+import { WishListBox2Component } from './components/card/wish-list-box2/wish-list-box2.component';
+// import { BreadcrumbModule} from '@syncfusion/ej2-angular-navigations'
 // import {BreadcrumbComponent} from 'xng-breadcrumb'
 
 
@@ -81,7 +85,11 @@ import { BreadcrumbModule} from '@syncfusion/ej2-angular-navigations'
     BestSellingProductComponent,
     BestProductCardComponent,
     CheckOutComponent,
-    CartListComponent
+    CartListComponent,
+    WishListPageComponent,
+    WishListCompComponent,
+    WishListBoxComponent,
+    WishListBox2Component
   ],
 
   imports: [
@@ -90,7 +98,7 @@ import { BreadcrumbModule} from '@syncfusion/ej2-angular-navigations'
     AppRoutingModule,
     RouterModule,
     CarouselModule,
-    BreadcrumbModule,
+    // BreadcrumbModule,
     // BreadcrumbComponent
     // HomeModule
     MatFormFieldModule,

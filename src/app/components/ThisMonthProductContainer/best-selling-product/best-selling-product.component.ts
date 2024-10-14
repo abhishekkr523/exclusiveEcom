@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { title } from 'process';
 
 @Component({
@@ -6,8 +6,12 @@ import { title } from 'process';
   templateUrl: './best-selling-product.component.html',
   styleUrl: './best-selling-product.component.scss'
 })
-export class BestSellingProductComponent {
+export class BestSellingProductComponent implements OnInit {
 
  @Input() bestSellingProductsData:any;
  @Input() customOptions:any;
+
+ngOnInit(): void {
+    // console.log('tarun pareta',this.bestSellingProductsData)
+}
 }

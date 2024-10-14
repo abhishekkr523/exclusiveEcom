@@ -13,10 +13,11 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { CartListComponent } from './layout/components/cart-list/cart-list.component';
 import { CheckOutComponent } from './pages/CheckOutPage/check-out/check-out.component';
+import { WishListPageComponent } from './pages/wish-list-page/wish-list-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', 
+  { path: 'home',
     data: { breadcrumb: { alias: 'Home' } },
     children : [
       { path: '', component: HomeComponent },
@@ -28,7 +29,7 @@ const routes: Routes = [
         component: MyAccountComponent,
         data: { breadcrumb: { alias: 'My Account' } }, // Only set alias here
         children: [
-          
+
           {
             path: '',
             redirectTo: 'myProfile',
@@ -73,12 +74,16 @@ const routes: Routes = [
         },
        ]
       },
-     
+      {
+        path:'wishList',
+        component:WishListPageComponent
+      }
+
     ]
    },
-   
+
   { path: 'userAuth', component: UserAuthComponent },
- 
+
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent,
     // data: { breadcrumb: { alias: 'about' } },

@@ -1,0 +1,31 @@
+<div class="con">
+  @switch(boxType){
+  @case('type1'){
+  <div class="main-outer">
+    <div class="heading">
+      <p>WishList({{wishListProducts.length}})</p>
+      <div>Move ALl To Back</div>
+    </div>
+    <div class="item">
+      <div *ngFor="let product of wishListProducts">
+        <app-wish-list-box [product]="product"></app-wish-list-box>
+      </div>
+    </div>
+  </div>
+  }
+
+  @case('type2'){
+  <div class="main-outer2">
+    <div class="heading-2">
+      <app-secondary-header [salesData]="justForYou"></app-secondary-header>
+      <div>See All</div>
+    </div>
+    <div class="item">
+      <div *ngFor="let product of wishListProducts">
+        <app-wish-list-box2 [product]="product"></app-wish-list-box2>
+      </div>
+    </div>
+  </div>
+  }
+  }
+</div>

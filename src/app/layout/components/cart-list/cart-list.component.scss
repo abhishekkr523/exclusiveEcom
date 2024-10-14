@@ -44,7 +44,7 @@
       .table {
         width: 100%;
         height: auto;
-        // border-collapse: separate;
+
         table {
           width: 100%;
           height: 100%;
@@ -55,28 +55,26 @@
             height: 72px;
             // gap: 4px;
 
-            th,
-            td {
+            tr,
+            th {
               width: 25%; /* Distribute equal width across 4 columns */
               height: 76px;
               padding: 10px;
               text-align: left;
-              // border: 1px solid #ddd; /* Optional: Adds borders for clarity */
-              border: none;
+              border-bottom: 0px solid #ddd;
             }
           }
           tbody {
             width: 100%;
             height: auto;
 
-            th,
+            tr,
             td {
               width: 25%; /* Distribute equal width across 4 columns */
               height: 102px;
               padding: 10px;
               text-align: left;
-              // border: 1px solid #ddd; /* Optional: Adds borders for clarity */
-              border: none;
+              border-bottom: 0px solid #ddd;
 
               .quantity-input {
                 // width: 100%;
@@ -95,6 +93,7 @@
               align-items: center;
               gap: 20px;
               width: 100%;
+              border-bottom: 0px solid #ddd;
               img {
                 height: 45px;
                 width: 45px;
@@ -136,10 +135,11 @@
         display: flex;
         width: 45.02%;
         height: 56px;
-        gap: 16px;
+        gap: 3.138%;
 
         input {
-          width: 300px;
+          // width: 300px;
+          width: 52.92%;
 
           height: 100%;
           padding: 16px 164px 16px 24px;
@@ -149,7 +149,7 @@
           opacity: 0px;
         }
         .apply-cuppon {
-          width: 211px;
+          width: 36%;
           height: 56px;
           padding: 16px 48px 16px 48px;
           gap: 10px;
@@ -227,4 +227,329 @@
       }
     }
   }
+}
+
+
+@media (max-width: 1590px) and (min-width:1170px) {
+  .con{
+    .main-div{
+      .box2 {
+        gap: 8%;
+        .box2-inner1 {
+          width: 40%;
+          input {
+            padding: 16px 16px 9px 14px;
+          }
+          .apply-cuppon {
+            padding: 15px 10px 10px 13px;
+          }
+        }
+
+        .box2-inner2 {
+          width: 400px; // Reduce the width of the right section for larger screens
+          padding: 24px 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1170px) and (min-width: 860px) {
+
+  .con{
+    .main-div{
+      height: 950px;
+      .box2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+        .box2-inner1 {
+          width: 80%;
+          input {
+            width: 60%;
+            padding: 16px 24px;
+          }
+          .apply-cuppon {
+            width: 35%;
+            padding: 16px 30px 16px 27px;
+          }
+        }
+
+        .box2-inner2 {
+          width: 80%;
+          padding: 24px 16px;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+@media (max-width: 860px)  and (min-width: 600px) {
+  .con{
+    .main-div{
+      height: 950px;
+      .box2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+        .box2-inner1 {
+          width: 80%;
+          input {
+            width: 60%;
+            padding: 16px 24px;
+          }
+          .apply-cuppon {
+            width: 35%;
+            padding: 16px 15px 16px 7px;
+          }
+        }
+
+        .box2-inner2 {
+          width: 80%;
+          padding: 24px 16px;
+        }
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: 600px)  and (min-width: 430px) {
+  .con{
+    .main-div{
+      height: 950px;
+
+
+      .box1 {
+        width: 100%;
+        height: 436px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        // .table {
+        //   width: 100%;
+        //   height: auto;
+        //   // border-collapse: separate;
+        //   table {
+        //     width: 100%;
+        //     height: 100%;
+        //     border-collapse: collapse;
+
+        //     thead {
+        //       width: 100%;
+        //       height: 72px;
+        //       // gap: 4px;
+
+        //       th,
+        //       td {
+        //         width: 25%; /* Distribute equal width across 4 columns */
+        //         height: 76px;
+        //         padding: 10px;
+        //         text-align: left;
+        //         // border: 1px solid #ddd; /* Optional: Adds borders for clarity */
+        //         border: none;
+        //       }
+        //     }
+        //     tbody {
+        //       width: 100%;
+        //       height: auto;
+
+        //       th,
+        //       td {
+        //         width: 25%; /* Distribute equal width across 4 columns */
+        //         height: 102px;
+        //         padding: 10px;
+        //         text-align: left;
+        //         // border: 1px solid #ddd; /* Optional: Adds borders for clarity */
+        //         border: none;
+
+        //         .quantity-input {
+        //           // width: 100%;
+        //           height: 44px;
+        //           text-align: center;
+        //           width: 72px;
+
+        //           border-radius: 4px ;
+        //           border: 1px solid black;
+
+        //         }
+        //       }
+
+        //       .product-name {
+        //         display: flex;
+        //         align-items: center;
+        //         gap: 20px;
+        //         width: 100%;
+        //         img {
+        //           height: 45px;
+        //           width: 45px;
+        //         }
+        //         div {
+        //           width: 108px;
+        //           height: 24px;
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
+
+        .btnn {
+
+
+          div {
+            width: 150px;
+
+          }
+        }
+      }
+      .box2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+        .box2-inner1 {
+          width: 80%;
+          input {
+            width: 55%;
+            padding: 16px 13px;
+          }
+          .apply-cuppon {
+            width: 55%;
+        padding: 16px 5px 11px 5px;
+          }
+        }
+
+        .box2-inner2 {
+          width: 80%;
+          padding: 24px 16px;
+        }
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: 430px)  and (min-width: 330px) {
+  .con{
+    .main-div{
+      height: 950px;
+
+
+      .box1 {
+        width: 100%;
+        height: 436px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        // .table {
+        //   width: 100%;
+        //   height: auto;
+        //   // border-collapse: separate;
+        //   table {
+        //     width: 100%;
+        //     height: 100%;
+        //     border-collapse: collapse;
+
+        //     thead {
+        //       width: 100%;
+        //       height: 72px;
+        //       // gap: 4px;
+
+        //       th,
+        //       td {
+        //         width: 25%; /* Distribute equal width across 4 columns */
+        //         height: 76px;
+        //         padding: 10px;
+        //         text-align: left;
+        //         // border: 1px solid #ddd; /* Optional: Adds borders for clarity */
+        //         border: none;
+        //       }
+        //     }
+        //     tbody {
+        //       width: 100%;
+        //       height: auto;
+
+        //       th,
+        //       td {
+        //         width: 25%; /* Distribute equal width across 4 columns */
+        //         height: 102px;
+        //         padding: 10px;
+        //         text-align: left;
+        //         // border: 1px solid #ddd; /* Optional: Adds borders for clarity */
+        //         border: none;
+
+        //         .quantity-input {
+        //           // width: 100%;
+        //           height: 44px;
+        //           text-align: center;
+        //           width: 72px;
+
+        //           border-radius: 4px ;
+        //           border: 1px solid black;
+
+        //         }
+        //       }
+
+        //       .product-name {
+        //         display: flex;
+        //         align-items: center;
+        //         gap: 20px;
+        //         width: 100%;
+        //         img {
+        //           height: 45px;
+        //           width: 45px;
+        //         }
+        //         div {
+        //           width: 108px;
+        //           height: 24px;
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
+
+        .btnn {
+
+
+          div {
+            width: 150px;
+
+          }
+        }
+      }
+      .box2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+        .box2-inner1 {
+          width: 80%;
+          input {
+            width: 55%;
+            padding: 16px 13px;
+          }
+          .apply-cuppon {
+            width: 55%;
+        padding: 16px 5px 11px 5px;
+          }
+        }
+
+        .box2-inner2 {
+          width: 80%;
+          padding: 24px 16px;
+        }
+      }
+    }
+
+  }
+
 }

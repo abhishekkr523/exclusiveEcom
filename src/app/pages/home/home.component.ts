@@ -377,6 +377,8 @@ export class HomeComponent {
     title1: 'Categories',
     title2: 'Browser By Category',
   };
+
+  
   productCustomOption = {
     loop: false,
     // mouseDrag: true,
