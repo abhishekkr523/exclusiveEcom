@@ -15,6 +15,8 @@ import { BannerComponent } from './components/banner/banner.component';
 import { HomeModule } from './pages/home/home.module';
 import { CardComponent } from './components/card/card.component';
 import { HomeComponent } from './pages/home/home.component';
+import { OfferProductComponent } from './components/offer-product/offer-product.component';
+import { BrowseByCategoriesCarouselComponent } from './components/browse-by-categories-carousel/browse-by-categories-carousel.component';
 import { SecondaryHeaderComponent } from './components/secondary-header/secondary-header.component';
 import { SidebarComponent } from './pages/home/components/sidebar/sidebar.component';
 import { UserAuthComponent } from './pages/user-auth/user-auth.component';
@@ -34,6 +36,17 @@ import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 
+
+
+
+import { ExploreProductCardComponent } from './components/card/ExploreProductCard/explore-product-card/explore-product-card.component';
+import { BestSellingProductComponent } from './components/ThisMonthProductContainer/best-selling-product/best-selling-product.component';
+import { BestProductCardComponent } from './components/card/BestProductCard/best-product-card/best-product-card.component';
+import { CheckOutComponent } from './pages/CheckOutPage/check-out/check-out.component';
+
+import { CartListComponent } from './layout/components/cart-list/cart-list.component';
+import { BreadcrumbModule} from '@syncfusion/ej2-angular-navigations'
+// import {BreadcrumbComponent} from 'xng-breadcrumb'
 
 
 
@@ -62,16 +75,23 @@ import { AboutComponent } from './pages/about/about.component';
     NotFoundComponent,
     ContactComponent,
     AboutComponent,
-    
-    
+    OfferProductComponent,
+    BrowseByCategoriesCarouselComponent,
+    ExploreProductCardComponent,
+    BestSellingProductComponent,
+    BestProductCardComponent,
+    CheckOutComponent,
+    CartListComponent
   ],
-  
+
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule,
     CarouselModule,
+    BreadcrumbModule,
+    // BreadcrumbComponent
     // HomeModule
     MatFormFieldModule,
     MatIconModule,

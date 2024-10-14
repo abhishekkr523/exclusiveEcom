@@ -1,0 +1,230 @@
+@import "../../../../styles.scss";
+
+.con {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  // justify-content: space-between;
+  padding: $core-padding;
+
+  .title {
+    width: 103px;
+
+    display: flex;
+
+    justify-content: space-between;
+    padding-top: 96px;
+
+    p:nth-child(1) {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+      opacity: 50%;
+    }
+  }
+
+  .main-div {
+    width: 100%;
+    height: 840px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    gap: 80px;
+    padding-bottom: 140px;
+
+    .box1 {
+      width: 100%;
+      height: 436px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .table {
+        width: 100%;
+        height: auto;
+        // border-collapse: separate;
+        table {
+          width: 100%;
+          height: 100%;
+          border-collapse: collapse;
+
+          thead {
+            width: 100%;
+            height: 72px;
+            // gap: 4px;
+
+            th,
+            td {
+              width: 25%; /* Distribute equal width across 4 columns */
+              height: 76px;
+              padding: 10px;
+              text-align: left;
+              // border: 1px solid #ddd; /* Optional: Adds borders for clarity */
+              border: none;
+            }
+          }
+          tbody {
+            width: 100%;
+            height: auto;
+
+            th,
+            td {
+              width: 25%; /* Distribute equal width across 4 columns */
+              height: 102px;
+              padding: 10px;
+              text-align: left;
+              // border: 1px solid #ddd; /* Optional: Adds borders for clarity */
+              border: none;
+
+              .quantity-input {
+                // width: 100%;
+                height: 44px;
+                text-align: center;
+                width: 72px;
+
+                border-radius: 4px ;
+                border: 1px solid black;
+
+              }
+            }
+
+            .product-name {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              width: 100%;
+              img {
+                height: 45px;
+                width: 45px;
+              }
+              div {
+                width: 108px;
+                height: 24px;
+              }
+            }
+          }
+        }
+      }
+
+      .btnn {
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+          width: 218px;
+          height: 100%;
+
+          border: 1px solid rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .box2 {
+      height: 324px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 14.78%;
+
+      .box2-inner1 {
+        display: flex;
+        width: 45.02%;
+        height: 56px;
+        gap: 16px;
+
+        input {
+          width: 300px;
+
+          height: 100%;
+          padding: 16px 164px 16px 24px;
+          gap: 0px;
+          border-radius: 4px 0px 0px 0px;
+          border: 1px 0px 0px 0px;
+          opacity: 0px;
+        }
+        .apply-cuppon {
+          width: 211px;
+          height: 56px;
+          padding: 16px 48px 16px 48px;
+          gap: 10px;
+          border-radius: 4px;
+
+          background-color: rgba(219, 68, 68, 1);
+          color: white;
+        }
+      }
+      .box2-inner2 {
+        width: 470px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 32px 24px;
+        border: 1.8px solid rgba(0, 0, 0, 1);
+        h2 {
+          //styleName: Title/20PX Medium;
+          font-family: Poppins;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 28px;
+          text-align: left;
+          margin-bottom: 15px;
+        }
+        .calculation {
+          display: flex;
+          flex-direction: column;
+
+          height: 44%;
+
+          .cal-suntotal {
+            display: flex;
+            // flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            height: 15%;
+            p {
+              //styleName: Title/16PX Regular;
+              font-family: Poppins;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+            }
+          }
+          hr {
+            width: 100%;
+            height: 1px;
+          }
+        }
+
+        .btnn {
+          width: 100%;
+          height: 56px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 25px;
+          .apply-cuppon {
+            width: 220px;
+            height: 56px;
+
+            border-radius: 4px;
+
+            background-color: rgba(219, 68, 68, 1);
+            color: white;
+            text-align: center;
+            padding-top: 17px;
+          }
+        }
+      }
+    }
+  }
+}

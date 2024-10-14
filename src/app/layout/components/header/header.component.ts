@@ -10,6 +10,11 @@ import { AuthService } from '../../../services/auth.service';
 export class HeaderComponent implements OnInit {
   navItems = ['Home', 'Contact', 'About', 'Sign Up'];
   activeItem!: string;
+  isSidebarOpen = false;
+
+
+  jumpToCart() {
+    this.router.navigate(['/cartList']); }// Navigate to the 'cart' page}
   constructor(private router: Router, private authService: AuthService) {}
   userLogin: any;
   ngOnInit(): void {
@@ -41,13 +46,29 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  isSidebarOpen = false;
+
 
   // Toggle sidebar when clicking the hamburger icon
   toggleSidebar() {
     this.isSidebarOpen = !this.isSidebarOpen;
+    this.preventScroll();
+  }
+  preventScroll() {
+    if (this.isSidebarOpen) {
+      this.disableScroll();
+    } else {
+      this.enableScroll();
+    }
+  }
+  // Disable scroll by setting body overflow to 'hidden'
+  disableScroll() {
+    document.body.style.overflow = 'hidden';
   }
 
+  // Enable scroll by resetting body overflow
+  enableScroll() {
+    document.body.style.overflow = 'auto';
+  }
   // Close sidebar if clicked outside of it
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {

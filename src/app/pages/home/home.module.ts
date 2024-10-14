@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
@@ -23,9 +23,20 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     CommonModule,
   ],
   exports : [
-   
+
 
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA] 
+  // imports: [
+  //   CommonModule,
+  //   CarouselModule,
+  //   // SlickCarouselModule
+  // ],
+  // exports: [
+  //   BannerComponent,
+  //   CarouselComponent,
+  //   BrowseByCategoriesCarouselComponent,
+  //   OfferProductComponent,
+  // ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class HomeModule { }
+export class HomeModule {}

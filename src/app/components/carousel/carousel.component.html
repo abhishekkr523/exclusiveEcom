@@ -1,29 +1,31 @@
-<div class="main-container">
-  <owl-carousel-o [options]="customOptions" >
+<div class="main-container " [class]="className">
+  <owl-carousel-o [options]="customOptions">
     @switch(carouselType){
-        @case('homeData'){
-            <ng-template carouselSlide  *ngFor="let product of data">
-                <app-card [product]="product"></app-card>
-            </ng-template>
-        }
-        <!-- @case('nav'){
-            <ng-template carouselSlide  *ngFor="let product of data">
-                <p>{{ product }}</p>
-               
-        
-            </ng-template>
-
-        } -->
-        @default {
-            Default case.
-          }
-        
+    @case('homeData'){
+    <ng-template carouselSlide *ngFor="let product of data">
+      <app-card [product]="product"></app-card>
+    </ng-template>
     }
-   
+    @case('categoriesData'){
+    <ng-template carouselSlide *ngFor="let category of data">
+      <!-- {{category.name}} -->
+      <app-browse-by-categories-carousel [category]="category"></app-browse-by-categories-carousel>
+
+    </ng-template>
+  }
+
+    @case('exploreProducts'){
+    <ng-template carouselSlide *ngFor="let products of exploreProductsdata">
+      <!-- {{products.title}} -->
+      <app-explore-product-card [product]="products"></app-explore-product-card>
+    </ng-template>
+    }
+    @default {
+    Default case.
+    }
+
+    }
+
   </owl-carousel-o>
-
- 
-
-  
 
 </div>

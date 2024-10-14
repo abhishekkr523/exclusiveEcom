@@ -7,10 +7,13 @@ import { Component, Input } from '@angular/core';
 })
 export class SecondaryHeaderComponent {
 
-  @Input() salesData:any
+  @Input() salesData:any;
+  @Input() newArrival:any;
+  @Input() showTime:any;
+
   @Input() showCarouselButton:any;
   ngOnInit(): void {
-    console.log("kkk",this.salesData)
+    // console.log("kkk",this.salesData)
   }
 
   handleCrauselNav(buttomType:string){

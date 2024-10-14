@@ -1,0 +1,83 @@
+<div class="con">
+  <div class="title" >
+    <p >home</p>/ <p>Cart</p>
+  </div>
+
+  <div class="main-div">
+    <div class="box1">
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+        <tbody>
+          <tr>
+            <td  class="product-name">
+              <!-- Product image and name -->
+              <img src="joystick.png" alt="Product Image" width="50" height="50">
+              <div>H1 GamePad</div> <!-- Product Name -->
+            </td>
+            <td>$699</td>
+            <td>
+              <!-- Quantity with up-down input -->
+              <input type="number" value="1" min="1" style="width: 60px;" class="quantity-input"  >
+            </td>
+            <td>$555</td>
+          </tr>
+          <tr>
+            <td class="product-name">
+              <!-- Product image and name -->
+              <img src="joystick.png" alt="Product Image" width="50" height="50">
+              <div>H1 GamePad</div> <!-- Product Name -->
+            </td>
+            <td>$699</td>
+            <td>
+              <!-- Quantity with up-down input -->
+              <input type="number" value="1" min="1" style="width: 60px;" class="quantity-input">
+            </td>
+            <td>$555</td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+      <div class="btnn">
+        <div>Return To Shop</div>
+        <div>Update Cart</div>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="box2-inner1">
+        <input type="text" name="" id="" placeholder="Coupon Code ">
+       <a class="apply-cuppon">Apply Coupon</a>
+      </div>
+      <div class="box2-inner2">
+        <h2>Cart Total</h2>
+        <div class="calculation">
+          <div class="cal-suntotal">
+            <p>Subtotal:</p>
+            <p>$1750</p>
+          </div>
+          <hr>
+          <div class="cal-suntotal">
+            <p>Shipping:</p>
+            <p>Free</p>
+          </div>
+          <hr>
+          <div class="cal-suntotal">
+            <p>Total:</p>
+            <p>$1750</p>
+          </div>
+        </div>
+        <div class="btnn">
+          <a class="apply-cuppon">Process To CheckOut</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

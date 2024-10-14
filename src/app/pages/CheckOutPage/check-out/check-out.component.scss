@@ -1,0 +1,225 @@
+@import '../../../../styles.scss';
+@import '../../../../../node_modules/@syncfusion/ej2-icons/styles/material.scss';
+// @import '/node_modules/@syncfusion/ej2-angular-base/styles/material.scss';
+// @import '../../../../../node_modules/@syncfusion/ej2-navigations/styles/material.scss';
+.primary-container{
+    font-family: "Poppins", sans-serif;;
+    padding: $core-padding;
+    a{
+        cursor: pointer;
+    }
+    .checkout-container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 140px;
+        .container-first-half,.container-second-half{
+            flex-basis: 50%;
+        }
+        .container-first-half{
+            .form-group{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 82px;
+                margin-bottom: 32px;
+                label{
+                    font-family: 'Poppins', sans-serif;
+                    opacity: 40%;
+                    span{
+                        color: red;
+                    }
+                }
+                .additional{
+                    display: flex;
+                align-items: center;
+                input{
+                    margin-right: 8px;
+                }
+                /* Styling the checkbox when it’s checked */
+                input[type="checkbox"] {
+                    appearance: none;
+                    padding: 0;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #fff;
+                    border: 2px solid #ccc;
+                    cursor: pointer;
+                    border-radius: 4px;
+                  }
+                  input[type="checkbox"]:checked {
+                    background-color:  rgba(219, 68, 68, 1);
+                    ; /* You can change this to any color */
+                    border-color: rgba(219, 68, 68, 1);
+                  }
+                  input[type="checkbox"]:checked::after {
+                    content: '\2713'; /* Unicode checkmark symbol */
+                    color: white;
+                    font-size: 16px;
+                    // display: block;
+                    // height: 10px;
+                    text-align: center;
+                    padding-bottom: 10px;
+                  }
+                
+                label{
+                    opacity: 100%;
+                    font-family: 'Poppins', sans-serif;
+                }
+                }
+            }
+            .billing{
+                // padding-bottom: 5%;
+                font-weight: 500;
+                font-size: 36px;
+                font-family: 'Inter', sans-serif;
+            }
+            .container-first-half-left{
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
+            input{
+                height: 50px;
+                padding: 3.4%;
+                margin: 1px;
+                background-color:$color-white-primary;
+                border: none;
+            }
+            input:focus{
+                border: 0;       
+                outline: none;
+            }
+
+           
+        }
+        .container-second-half{
+            padding:11% 0% 22% 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .container-second-half-upper{
+                display: flex;
+                
+                flex-direction: column;
+                height: 100%;
+                padding-bottom: 4.5%;
+                padding-right: 19%;
+                justify-content: space-between;
+                .radio-btn{
+                    flex-basis: 60%;
+                }
+                .container-second-half-fifth{
+                    display: flex;
+                    justify-content: space-between;
+                    img{
+                        cursor: pointer;
+                    }
+                    
+                }
+                label{
+                    padding-left: 15px;
+                }
+                
+            }
+            .container-second-half-first{
+                height: 54px;
+                // margin-bottom:32px ;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                    // margin-top: 30px;
+                .image{
+                    height: 45px;
+                        width: 45px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        
+                    }
+                }
+                .product-name{
+                    flex-basis: 60%;
+                }
+                .product-price{
+                    flex-basis: 20%;
+                    text-align: end;
+                }
+            }
+            .container-second-half-second,.container-second-half-third,.container-second-half-forth{
+                display: flex;
+                justify-content: space-between;
+               
+            }
+            
+        }
+    }
+}
+ol{
+    display: flex;
+    justify-content: space-between;
+}
+.box2-inner1 {
+    display: flex;
+    // width: 45.02%;
+    height: 56px;
+    margin-bottom: 32px;
+    gap: 16px;
+
+    input {
+      width: 300px;
+
+      height: 100%;
+      padding: 16px 164px 16px 24px;
+      gap: 0px;
+      border-radius: 4px 0px 0px 0px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+    }
+    .apply-cuppon {
+      width: 211px;
+      height: 56px;
+      padding: 16px 48px 16px 48px;
+      gap: 10px;
+      border-radius: 4px;
+
+      background-color: rgba(219, 68, 68, 1);
+      color: white;
+    }
+  }
+  .container-second-half-sixth{
+    width: 211px;
+    cursor: pointer;
+height: 56px;
+padding: 16px 48px 16px 48px;
+gap: 10px;
+border-radius: 4px;
+
+background-color: rgba(219, 68, 68, 1);
+color: white;
+}
+.cashOnDelivery{
+    // margin-top: 32px;
+    padding-top: 2%;
+}
+.container-second-half-second{
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    
+}
+.container-second-half-third{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+.container-second-half-forth{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}

@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+// Import global styles
+// @import 'src/styles.scss';
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Sixtyfour+Convergence&display=swap');
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+
+
 
 html, body {
 height: 100%;
@@ -19,6 +25,11 @@ $fontweight-extra-bold: 900;
 $hover-color-gray: rgb(223, 231, 232);
 $hover-color-lightgray: rgb(237, 241, 241);
 $core-padding: 0% 9.4% 0% 9.4%;
+$roadmap-padding: 5% 0% ;
+$main-padding:9.4%;
+$padding-header-navbar:3.66% 9.4% 1.5% ;
+$component-header-padding: 5% 9.4% 3% 9.4%;
+
 /* Global styles */
 body {
 font-family: "Poppins", sans-serif;
@@ -42,18 +53,22 @@ text-decoration: underline;
 
 #carouselExampleCaptions{
     height:300px;
-  
+
 }
-.owl-carousel .owl-item {
+.productsSccs .owl-carousel .owl-item {
     width: 286px !important;
     height: 350px;
     // padding-right:33px;
 }
-.owl-carousel .owl-stage{
+.productsSccs .owl-carousel .owl-stage{
     display: flex;
-    width: 100vw;
+    // width: 100vw;
     gap: 17px;
-   
+    // justify-content: space-between;
+
+}
+.owl-nav,.owl-dots{
+    display: none;
 }
 .owl-nav{
     display: none;
@@ -63,3 +78,5 @@ text-decoration: underline;
 
 
   
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
