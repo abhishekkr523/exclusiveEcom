@@ -1,5 +1,11 @@
-<div>
-  <app-banner></app-banner>
+<router-outlet></router-outlet>
+
+<div class="bannerSection">
+
+  <app-sidebar class="app-sidebar" ></app-sidebar>
+ 
+  <app-banner class="app-banner"></app-banner>
+ 
 </div>
 
 
@@ -86,28 +92,29 @@
         width: 100%;
         height: 288px;
         justify-content: space-between;
-      ">
-          <div class="continer-right-buttom-left">
-            <div
-              [ngStyle]="{'background-image': 'url(speaker.png)', 'background-size': 'contain', 'background-position': 'center', 'background-repeat': 'no-repeat', }"
-              style="display: flex; align-items: end; width: 100%; height: 100%">
-              <div class="product-details">
-                <h4>Speakers</h4>
-                <p>Amazon wireless speakers</p>
-                <button>Shop Now</button>
-              </div>
-            </div>
+      "
+    >
+      <div class="continer-right-buttom-left">
+        <div
+          [ngStyle]="{'background-image': 'url(speaker.png)', 'background-size': 'contain', 'background-position': 'center', 'background-repeat': 'no-repeat', }"
+          style="display: flex; align-items: end; width: 100%; height: 100%"
+        >
+          <div class="product-details">
+            <h4>Speakers</h4>
+            <p>Amazon wireless speakers</p>
+            <button>Shop Now</button>
           </div>
-          <div class="continer-right-buttom-right">
-            <div
-              [ngStyle]="{'background-image': 'url(gucci.png)', 'background-size': 'contain', 'background-position': 'center', 'background-repeat': 'no-repeat', }"
-              style="display: flex; align-items: end; width: 100%; height: 100%">
-              <div class="product-details">
-                <h4>Perfume</h4>
-                <p>GUCCI INTENSE OUD EDP</p>
-                <button>Shop Now</button>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="continer-right-buttom-right">
+        <div
+          [ngStyle]="{'background-image': 'url(gucci.png)', 'background-size': 'contain', 'background-position': 'center', 'background-repeat': 'no-repeat', }"
+          style="display: flex; align-items: end; width: 100%; height: 100%"
+        >
+          <div class="product-details">
+            <h4>Perfume</h4>
+            <p>GUCCI INTENSE OUD EDP</p>
+            <button>Shop Now</button>
           </div>
         </div>
       </div>

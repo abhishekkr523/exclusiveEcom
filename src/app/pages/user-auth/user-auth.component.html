@@ -1,0 +1,166 @@
+<div class="user-auth" >
+  <div class="outer-left-container" >
+    <div class="left-container"
+      [ngStyle]="{
+        'background-image': 'url(p-image.png)',
+        'background-size': 'contain',
+        'background-position': 'center',
+        'background-repeat': 'no-repeat'
+      }"
+    ></div>
+  </div>
+  <div
+    class="right-container">
+    <div class="right-container-main" >
+      <!-- Conditionally render the title -->
+      <div
+        class="title"
+        style="font-size: 28px; font-weight: 500; line-height: 30px"
+      >
+        {{ isSignUp ? "Create an account" : "Log in to Exclusive" }}
+      </div>
+
+      <div
+        class="subtitle"
+        style="
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          padding: 20px 0px 10px 0px;
+        "
+      >
+        Enter your details below
+      </div>
+
+      <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+        <!-- Name field only for Sign Up -->
+        <div
+          *ngIf="isSignUp"
+          class=""
+          style="margin-top: 25px; border-bottom: 2px solid #ccc"
+        >
+          <input
+          [(ngModel)]="user.name"
+          name="name"
+            type="text"
+            class="form-control"
+            style="
+              border: none;
+              box-shadow: none;
+              outline: none;
+              font-size: 16px;
+              font-weight: 400;
+              opacity: 40%;
+            "
+            placeholder="Name"
+          />
+        </div>
+
+        <!-- Email/Phone field -->
+        <div class="" style="margin-top: 25px; border-bottom: 2px solid #ccc">
+          <input
+          [(ngModel)]="user.emailOrPhone"
+          name="emailOrPhone"
+            type="email"
+            class="form-control"
+            style="
+              border: none;
+              border-bottom: 2px solid #ccc;
+              box-shadow: none;
+              outline: none;
+              font-size: 16px;
+              font-weight: 400;
+              opacity: 40%;
+            "
+            placeholder="Email or Phone Number"
+          />
+        </div>
+
+        <!-- Password field -->
+        <div class="" style="margin-top: 25px; border-bottom: 2px solid #ccc">
+          <input
+          [(ngModel)]="user.password"
+          name="password"
+            type="password"
+            class="form-control"
+            style="
+              border: none;
+              border-bottom: 2px solid #ccc;
+              box-shadow: none;
+              outline: none;
+              font-size: 16px;
+              font-weight: 400;
+              opacity: 40%;
+            "
+            placeholder="Password"
+          />
+        </div>
+
+        <!-- Button text changes based on the form -->
+        <div
+  [ngStyle]="{
+    'display': 'flex',
+    'flex-direction': isSignUp ? 'column' : 'row'
+  }"
+  [ngClass]="{'flex-column-on-small': true}"
+>
+  <button
+    type="submit"
+    class="btn btn-primary w-100"
+    style="
+      background: rgba(219, 68, 68, 1);
+      margin-top: 30px;
+      font-size: 16px;
+      padding: 13px;
+      border: none;
+    "
+  >
+    {{ isSignUp ? 'Create Account' : 'Log In' }}
+  </button>
+
+  <button
+    type="submit"
+    class="btn w-100 secondary-button"
+    [ngStyle]="{
+      border: isSignUp ? '1px solid rgba(0, 0, 0, 0.4)' : 'none',
+      'border-radius': '4px'
+    }"
+  >
+    <!-- Conditionally render the image only for Sign Up -->
+    <img
+      *ngIf="isSignUp"
+      src="google.png"
+      alt=""
+      style="height: 22px; padding-right: 13px"
+    />
+    <!-- Change text based on whether it's Sign Up or Sign In -->
+    {{ isSignUp ? 'Sign up with Google' : 'Forgot Password?' }}
+  </button>
+</div>
+
+        
+
+        <div style="display: flex; justify-content: center; margin-top: 30px">
+          <!-- Text changes based on the form -->
+          <span style="font-size: 16px; font-weight: 400; opacity: 70%">
+            {{
+              isSignUp ? "Already have an account?" : "Don’t have an account?"
+            }}
+          </span>
+          <span
+            style="
+              font-size: 16px;
+              font-weight: 500;
+              opacity: 70%;
+              cursor: pointer;
+              padding-left: 17px;
+            "
+            (click)="toggleForm()"
+          >
+            {{ isSignUp ? "Log in" : "Sign up" }}
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

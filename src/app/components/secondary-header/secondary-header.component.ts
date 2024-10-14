@@ -10,7 +10,7 @@ export class SecondaryHeaderComponent {
   @Input() salesData:any;
   @Input() newArrival:any;
   @Input() showTime:any;
-
+  // @Input() className:any
   @Input() showCarouselButton:any;
   ngOnInit(): void {
     // console.log("kkk",this.salesData)

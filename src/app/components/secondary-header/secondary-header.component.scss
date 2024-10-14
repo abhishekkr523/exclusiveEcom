@@ -12,6 +12,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      gap: 24px;
       .top {
         // width: 70%;
 
@@ -27,7 +28,7 @@
           align-items: center;
           font-size: 16px;
           font-weight: 600;
-          
+
           line-height: 20px;
           font-family: poppins;
           color: $color-primary;
@@ -39,6 +40,7 @@
         font-size: 36px;
         font-weight: 600;
         font-family: inter;
+        width: 400px;
       }
     }
     .container-right {
@@ -66,7 +68,7 @@
         color: $color-primary;
       }
     }
-    
+
   }
 }
 .carouselButton{
@@ -79,7 +81,7 @@
       flex-basis: 100%;
     }
   }
-  
+
 }
 @media (max-width:743px) {
   .flash-sale{
@@ -89,8 +91,8 @@
       }
     }
   }
-  
-  
+
+
 }
 
 @media (max-width:591px) {
@@ -99,7 +101,7 @@
       //   display: none;
       // }
 
-  
+
 }
 @media (max-width:400px) {
   .flash-sale{
@@ -108,7 +110,7 @@
         .buttom{
           font-size: 30px;
           font-size: 400;
-        
+
         }
       }
     }
@@ -119,5 +121,12 @@
  .carouselButton{
   display: none;
  }
-  
+
 }
+
+
+
+
+// new class forr wishlist
+
+

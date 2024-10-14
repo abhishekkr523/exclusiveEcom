@@ -19,7 +19,7 @@
     </div>
     <div class="Navbar">
         <div class="inner-navbar">
-            <span class="exclusive" routerLink="/">Exclusive</span>
+            <span  class="exclusive" style="cursor: pointer;" routerLink="/" >Exclusive</span>
 
             <div class="center-navbar" >
                 <div class="navItems">
@@ -35,8 +35,8 @@
                     <span><img src="search.png" alt=""></span>
                 </div>
                 <div class="addList">
-                    <span id="wishlist" class="additional"><img src="Wishlist.png" alt=""></span>
-                    <span id="cart" class="additional"><img src="Cart1 with buy.png" alt="" (click)="jumpToCart()"></span>
+                    <span id="wishlist" class="additional" style="cursor: pointer;" ><img src="Wishlist.png" alt="" (click)="jumpToWishlist()"></span>
+                    <span id="cart" class="additional" style="cursor: pointer;" ><img src="Cart1 with buy.png" alt="" (click)="jumpToCart()"></span>
                     <!-- <app-hamburger></app-hamburger> -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" fill="currentColor" id="hamburger" (click)="toggleSidebar()" class="bi bi-list" viewBox="0 0 16 16" (click)="preventScroll()">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -48,30 +48,81 @@
                     <span></span>
                     <span></span>
                 </div> -->
-                <!-- <i class="bi bi-list" id="hamburger" (click)="toggleSidebar()"></i> -->
+        <!-- <i class="bi bi-list" id="hamburger" (click)="toggleSidebar()"></i> -->
 
-                <div class="head2mid" id="sidebar" [class.active]="isSidebarOpen" (click)="$event.stopPropagation()">
-                    <div class="cancel-btn" style="width: 100%; padding-bottom: 20px;">
-                       <a (click)="toggleSidebar()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                          </svg>
-                       </a>
-                    </div>
-                    <div id="innerSidebar">
-                        <div class="nav-item" id="search">Search</div>
-                        <!-- <div *ngFor="let item of navItems" (click)="setActive(item)"
-                            [ngClass]="{'active': activeItem === item}" class="nav-item">
-                            {{ item }}
-                        </div> -->
-                        <div *ngFor="let item of navItems" class="nav-item">
-                            {{ item }}
-                        </div>
-                        <div class="nav-item">Login</div>
-                    </div>
-                </div>
-
+        <div
+          class="head2mid"
+          id="sidebar"
+          [class.active]="isSidebarOpen"
+          (click)="$event.stopPropagation()"
+        >
+          <div id="innerSidebar">
+            <div
+              *ngFor="let item of navItems"
+              (click)="setActive(item)"
+              [ngClass]="{ active: activeItem === item }"
+              class="nav-item"
+            >
+              {{ item }}
             </div>
+          </div>
         </div>
+      </div>
+
+
+      <div class="dropdown  user" style="z-index: 8" *ngIf="userLogin">
+        <button
+          class="btn"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          style="
+          width: 32px;
+          height: 32px;
+          background: rgba(219, 68, 68, 1);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+        >
+        <i class="fa-regular fa-user"></i>
+        </button>
+        <ul
+          class="dropdown-menu"
+          aria-labelledby="dropdownMenuButton"
+          style="
+          padding: 15px;
+            backdrop-filter: blur(50px);
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            color: #ffffff;
+            background-color: rgba(21, 21, 22, 0.4);
+          "
+        >
+          <li class="d-flex justify-content-center">
+            <i class="fa-regular fa-user"></i>
+            <a class="dropdown-item" style="color: #ffffff; font-size: 14px;" routerLink="home/myAccount">Manage My Account</a>
+          </li>
+          <li class="d-flex">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <a class="dropdown-item" style="color: #ffffff; font-size: 14px;" href="#">My Order</a>
+          </li>
+          <li class="d-flex">
+            <i class="fa-solid fa-xmark"></i>
+            <a class="dropdown-item" style="color: #ffffff; font-size: 14px;" href="#">My Cancellations</a>
+          </li>
+          <li class="d-flex">
+            <i class="fa-regular fa-star"></i>
+            <a class="dropdown-item" style="color: #ffffff; font-size: 14px;" href="#">My Reviews</a>
+          </li>
+          <li class="d-flex">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <a class="dropdown-item" style="color: #ffffff; font-size: 14px;" (click)="logout()">Logout</a>
+          </li>
+        </ul>
+      </div>
     </div>
 </div>

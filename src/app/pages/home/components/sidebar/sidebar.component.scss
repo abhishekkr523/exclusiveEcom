@@ -1,0 +1,68 @@
+
+.side-bar {
+  position: relative;
+  border-right: 1px solid rgb(7, 7, 7, 0.2);
+  height: 100%;
+  padding-top: 38px;
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 10px 0px 10px 0px;
+
+    .bar {
+      height: 4px;
+      width: 30px;
+      background-color: #333;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+  }
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    li {
+      font-size: 16px;
+      font-weight: 400;
+      list-style: none;
+      display: flex;
+      line-height: 24px;
+      justify-content: space-between;
+      span {
+        padding: 0px 18px;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    padding-top: 0px;
+    z-index: 5;
+    position: absolute;
+    border-right: 0px;
+    .hamburger {
+      display: flex;
+      // Show hamburger icon on small screens
+    }
+
+    ul {
+      display: none; // Hide the menu by default
+       background: #ffffff; 
+
+      &.active {
+        display: block; // Show the menu when active
+      }
+      li{
+        border-bottom: 1px solid #ddd;
+        padding: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}

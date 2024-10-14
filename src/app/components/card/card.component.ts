@@ -30,4 +30,27 @@ export class CardComponent implements OnInit {
     onColorSelect(selectedColor: any) {
       this.product.productImage = selectedColor.productImage;
     }
+
+    // product save in local storage
+    // toggleFavorite(product: any): void {
+    //   let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+
+    //   if (this.isFavorite(product)) {
+    //     // If already favorite, remove from localStorage
+    //     favorites = favorites.filter((p: any) => p.id !== product.id);
+    //   } else {
+    //     // If not favorite, add to localStorage
+    //     favorites.push(product);
+    //   }
+
+    //   localStorage.setItem('favorites', JSON.stringify(favorites));
+    // }
+
+    // // Method to check if a product is in favorites
+    // isFavorite(product: any) {
+    //  if(typeof localStorage != 'undefined') {
+    //   const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    //   return favorites.some((p: any) => p.id === product.id);
+    //  }
+    // }
 }

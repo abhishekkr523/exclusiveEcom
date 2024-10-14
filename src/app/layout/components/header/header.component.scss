@@ -373,5 +373,29 @@ width: 60%;
     }
    
 }
+
+.dropdown-item {
+    background: transparent; /* Normal background */
+    color: #ffffff; /* Normal text color */
+    
+  }
+  
+  .dropdown-item:hover {
+    background: transparent; /* Same as normal background */
+    text-decoration: none;
+    color: red !important;
+   
+  }
+  i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .active {
+    font-weight: bold; /* You can customize this style */
+    color: blue; /* Change color for active link */
+  }
+  
  
 

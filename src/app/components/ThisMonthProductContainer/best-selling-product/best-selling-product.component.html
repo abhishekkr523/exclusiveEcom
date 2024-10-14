@@ -1,11 +1,14 @@
 <div class="main-container">
-    <div class="inner-container">
-        <div  *ngFor="let product of bestSellingProductsData">
-            <app-best-product-card  style=" width: 100vw;" [product]="product">
-            </app-best-product-card>
-           </div>
-    </div>
-  
+  <div class="inner-container">
     
+    <div *ngFor="let product of bestSellingProductsData">
+      <app-best-product-card style=" width: 100vw;" [product]="product">
+      </app-best-product-card>
+    </div>
+
+
+  </div>
+
+
 
 </div>
