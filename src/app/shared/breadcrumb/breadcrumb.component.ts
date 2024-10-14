@@ -18,6 +18,7 @@ export class BreadcrumbComponent implements OnInit {
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
         this.breadcrumbs = this.createBreadcrumbs(this.activatedRoute.root);
+        console.log("ff",this.breadcrumbs)
       });
 
     // Initialize breadcrumbs immediately for the first load

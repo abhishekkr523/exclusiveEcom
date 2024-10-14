@@ -1,7 +1,64 @@
-
 @import "../../mixsin.scss";
 @import "../../../styles.scss";
 
-  .breadcrumb, .outer-container{
-    padding: $core-padding;
+.breadcrumb, .outer-container {
+  padding: $core-padding;
+}
+
+span {
+  cursor: pointer;
+}
+
+.active {
+  color: #ff0000; /* Add your desired color for the active route */
+}
+
+p {
+  color: #ff0000;
+  padding-left: 6px;
+}
+
+/* Hamburger menu and responsive styling */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (max-width: 1000px) {
+  .outer-container {
+    flex-direction: column;
   }
+
+  .outer-container-left {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .outer-container-right {
+    width: 100% !important;
+  }
+  
+  .show-sidebar {
+    display: block;
+    position: relative;
+  }
+}

@@ -14,9 +14,12 @@ import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent,
+  { path: 'home',
     data: { breadcrumb: { alias: 'Home' } },
     children : [
+      {
+        path: '', component: HomeComponent
+      },
       {
         path: 'myAccount',
         component: MyAccountComponent,
@@ -59,7 +62,9 @@ const routes: Routes = [
   
   { path: 'userAuth', component: UserAuthComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'about', component: AboutComponent,
+    // data: { breadcrumb: { alias: 'about' } },
+   },
   { path: '404', component: NotFoundComponent }, // Added 404 component route
   { path: '**', redirectTo: '404' },
 ];
