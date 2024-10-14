@@ -6,6 +6,7 @@ import { BannerComponent } from '../../components/banner/banner.component';
 import { CarouselComponent } from '../../components/carousel/carousel.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RouterModule, Routes } from '@angular/router';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 // Define the routes for HomeComponent
 // const routes: Routes = [
@@ -15,7 +16,9 @@ import { RouterModule, Routes } from '@angular/router';
 //   }
 // ];
 @NgModule({
-  declarations: [],
+  declarations: [
+    
+  ],
   imports: [
     CommonModule,
   ],

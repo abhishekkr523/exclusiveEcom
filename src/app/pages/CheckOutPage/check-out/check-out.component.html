@@ -1,14 +1,7 @@
 <div class="primary-container">
-    <!-- <ejs-breadcrumb>
-        <e-breadcrumb-items>
-            <e-breadcrumb-item text="Account" url="/"></e-breadcrumb-item>
-            <e-breadcrumb-item text="My Account" url="./myaccount"></e-breadcrumb-item>
-            <e-breadcrumb-item text="Product" url="./product"></e-breadcrumb-item>
-        </e-breadcrumb-items>
 
-    </ejs-breadcrumb>-->
 
-    
+    <app-breadcrumb></app-breadcrumb>
     <div class="checkout-container">
         <div class="container-first-half">
             <div class="container-first-half-left">
@@ -61,11 +54,8 @@
             </div>
         </div>
         <div class="container-second-half">
-            
-            <div  class="container-second-half-upper">
-
-
-                <div  class="container-second-half-first" *ngFor="let product of products">
+            <div class="container-second-half-upper">
+                <div class="container-second-half-first" *ngFor="let product of products">
                     <span class="image">
                         <img src="{{product.image}}" alt="">
                     </span>
@@ -92,30 +82,36 @@
                     <span>
                         Free
                     </span>
-                   
+
                 </div>
                 <div class="container-second-half-forth">
                     <span>Total</span>
                     <span>$1750</span>
                 </div>
-                <div>
+                <div class="container-second-half-fifth">
+
                     <div class="radio-btn">
                         <input type="radio" name="option" id="option1"> <label for="option1">Bank</label>
                     </div>
-                    <div>
-                        
+                    <div >
+                        <img src="Bkash.png" alt="Bkash">
+                        <img src="Visa.png" alt="visa">
+                        <img src="Mastercard.png" alt="mastercart">
+                        <img src="Nagad.png" alt="">
                     </div>
                 </div>
-                <div>
+                <div class="cashOnDelivery">
                     <input type="radio" name="option" id="option2"> <label for="option2">Cash On Delivery</label>
 
                 </div>
             </div>
-            <div>
-                <div></div>
-                <div></div>
+            <div class="box2-inner1">
+                <input type="text" name="" id="" placeholder="Coupon Code ">
+                <a class="apply-cuppon">Apply Coupon</a>
             </div>
-            <div></div>
+            <div class="container-second-half-sixth">
+                Place Order
+            </div>
         </div>
     </div>
 </div>

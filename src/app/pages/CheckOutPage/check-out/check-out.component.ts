@@ -16,10 +16,10 @@ products:any=[
   },
   {
     "id": 1,
-    "name": "Product 1",
+    "name": "Product 2",
     "price": 10.99,
     "quantity": 2,
-    "image":"chair.png"
+    "image":"gucci.png"
   },
 ]
 }

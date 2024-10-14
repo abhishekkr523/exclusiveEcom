@@ -1,0 +1,17 @@
+@import '../../../styles.scss';
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+nav[aria-label="breadcrumb"] {
+    a{
+        color: $color-tertiary;
+        opacity: 50%;
+       
+    }
+}
+.breadcrumb{
+    padding: 5% 0px;
+}

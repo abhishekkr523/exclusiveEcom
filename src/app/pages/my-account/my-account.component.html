@@ -1,0 +1,35 @@
+<div class="breadcrumb d-flex">
+  <div style="width:50%"><app-breadcrumb></app-breadcrumb></div>
+  <div style="width:50%">Welcome</div>
+</div>
+<div class="outer-container" style=" display:flex; width: 100%;">
+    <div class="outer-container-left" style="width: 30%;">
+        <div class="my-account">
+          <div class="my-account-title" style="font-weight: 500; font-size: 16px; line-height: 24px;">Manage My Account</div>
+          <div class="my-account-contents" style="display: flex; flex-direction: column; padding-left: 35px;">
+            <span routerLink="myProfile">My Profile</span>
+            <span routerLink="myAddressBook">Address Book</span>
+            <span routerLink="myPaymentOptions">My Payment Options</span>
+          </div>
+        </div>
+        <div class="my-order">
+          <div class="my-order-title" style="font-weight: 500; font-size: 16px; line-height: 24px;">My Orders</div>
+          <div class="my-order-contents" style="display: flex; flex-direction: column; padding-left: 25px;">
+            <span routerLink="myReturns">My Returns</span>
+            <span routerLink="myCancellations">My Cancellations</span>
+          </div>
+        </div>
+        <div class="my-wishlist">
+          <div class="my-wishlist-title" style="font-weight: 500; font-size: 16px; line-height: 24px;">My WishList</div>
+          <div class="my-wishlist-contents">
+            <!-- <span></span>
+            <span></span>
+            <span></span> -->
+          </div>
+        </div>
+    </div>
+    <div class="outer-container-right" style="display: flex; flex-direction: column;  width: 70%;">
+      <router-outlet></router-outlet>
+          
+    </div>
+</div>

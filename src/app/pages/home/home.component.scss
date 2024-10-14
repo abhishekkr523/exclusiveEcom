@@ -1,6 +1,17 @@
 @import "../../mixsin.scss";
 @import "../../../styles.scss";
 
+.bannerSection{
+    display: flex; justify-content: space-between; 
+    padding: $core-padding;
+    width: 100%;
+    .app-sidebar{
+        width: 18%;
+    }
+    .app-banner{
+        width: 78%;
+    }
+}
 .adds {
   display: flex;
   width: 100%;
@@ -61,9 +72,16 @@
     z-index: -2;
     padding: 30px;
 }
-.simpleProduct{
-  width: 100vw;
-  padding: $core-padding;
+@media (max-width: 1200px) {
+   .bannerSection{
+     flex-direction: column;
+    .app-sidebar{
+        width: 0%;
+    }
+    .app-banner{
+        width: 100%;
+    }
+}
 }
 @media (max-width: 768px) {
   .adds {
@@ -72,7 +90,7 @@
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    // gap: 25px;
+    gap: 25px;
     .container-left {
       width: 100%;
     }
@@ -83,9 +101,12 @@
 }
 
 @media (max-width: 500px) {
+
     .container-right-buttom {
-        // gap: 25px;
+        gap: 25px;
     flex-direction: column;
+    // margin-bottom: 53px;
+
     .continer-right-buttom-left {
       width: 100%;
     }

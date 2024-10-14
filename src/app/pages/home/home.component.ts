@@ -384,7 +384,7 @@ export class HomeComponent {
     // pullDrag: true,
     dots: false,
     // navSpeed: 700,
-    // autoplay: true,    // Enable autoplay
+    autoplay: false,    // Enable autoplay
     // autoplayTimeout: 3000,  // Time between automatic slides
     // autoplayHoverPause: true,  // Pause autoplay on hover
     // autoplaySpeed: 1000,
@@ -420,7 +420,7 @@ export class HomeComponent {
     // pullDrag: true,
     dots: false,
     // navSpeed: 700,
-    // autoplay: true,    // Enable autoplay
+    autoplay: false,    // Enable autoplay
     // autoplayTimeout: 3000,  // Time between automatic slides
     // autoplayHoverPause: true,  // Pause autoplay on hover
     // autoplaySpeed: 1000,
