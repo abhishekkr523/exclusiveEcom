@@ -2,7 +2,7 @@
 @import "../../../styles.scss";
 
 .outer-container {
-width: 100vw;
+width: 100%;
 padding: $core-padding;
 @include flex-center;
 .outer-container-left {
@@ -12,7 +12,7 @@ padding: $core-padding;
   .side-bar {
     width: 100%;
     height: 100%;
-    
+
     ul {
       display: flex;
       flex-direction: column;
@@ -45,7 +45,7 @@ padding: $core-padding;
   .carol {
     width: 100%;
     height: 100%;
-    
+
   }
 }
 }
