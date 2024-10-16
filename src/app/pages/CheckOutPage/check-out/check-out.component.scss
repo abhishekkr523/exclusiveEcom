@@ -1,7 +1,5 @@
 @import '../../../../styles.scss';
-@import '../../../../../node_modules/@syncfusion/ej2-icons/styles/material.scss';
-// @import '/node_modules/@syncfusion/ej2-angular-base/styles/material.scss';
-// @import '../../../../../node_modules/@syncfusion/ej2-navigations/styles/material.scss';
+
 .primary-container{
     font-family: "Poppins", sans-serif;;
     padding: $core-padding;
@@ -60,7 +58,7 @@
                     text-align: center;
                     padding-bottom: 10px;
                   }
-                
+
                 label{
                     opacity: 100%;
                     font-family: 'Poppins', sans-serif;
@@ -91,11 +89,11 @@
                 border: none;
             }
             input:focus{
-                border: 0;       
+                border: 0;
                 outline: none;
             }
 
-           
+
         }
         .container-second-half{
             padding:11% 0% 22% 5%;
@@ -104,7 +102,7 @@
             justify-content: space-between;
             .container-second-half-upper{
                 display: flex;
-                
+
                 flex-direction: column;
                 height: 100%;
                 padding-bottom: 4.5%;
@@ -119,12 +117,12 @@
                     img{
                         cursor: pointer;
                     }
-                    
+
                 }
                 label{
                     padding-left: 15px;
                 }
-                
+
             }
             .container-second-half-first{
                 height: 54px;
@@ -140,7 +138,7 @@
                         width: 100%;
                         height: 100%;
                         object-fit: contain;
-                        
+
                     }
                 }
                 .product-name{
@@ -154,9 +152,9 @@
             .container-second-half-second,.container-second-half-third,.container-second-half-forth{
                 display: flex;
                 justify-content: space-between;
-               
+
             }
-            
+
         }
     }
 }
@@ -212,7 +210,7 @@ color: white;
     padding-top: 2%;
     padding-bottom: 2%;
     border-bottom: 1px solid rgba(0, 0, 0, 1);
-    
+
 }
 .container-second-half-third{
     padding-top: 2%;

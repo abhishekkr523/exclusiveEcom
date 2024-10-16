@@ -27,7 +27,7 @@
         border-radius: 4px;
         background: $color-primary;
         font-size: 12px;
-        
+
       }
       .product-image {
         position: absolute;
@@ -129,4 +129,28 @@
 }
 .new-discount {
   background-color: green;
+}
+
+
+
+@media (max-width: 667px) and (min-width:440px) {
+
+  .most-outer-container{
+
+
+    .outer-container{
+      width: 365px;
+
+      .item{
+
+        .product-image{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-right: 90px;
+        }
+      }
+    }
+  }
 }

@@ -61,7 +61,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      .title {
+        width: 156px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       border: none;
+      }
       div {
         width: 156px;
         height: 100%;
@@ -81,3 +88,102 @@
     }
   }
 }
+
+@media (max-width: 1354px) and (min-width: 744px) {
+  .con {
+    height: 840px;
+    margin-bottom: 47px;
+  }
+}
+@media (max-width: 744px) and (min-width: 681px) {
+  .con {
+    height: 840px;
+    margin-bottom: 47px;
+
+    .main-outer {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      .heading {
+        // width: 100%;
+        // height: 56px;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+
+        div {
+          height: 100%;
+          width: 152px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+        .item {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 681px) and (min-width: 350px) {
+  .con {
+    height: 1600px;
+
+    .main-outer {
+      .heading {
+        div {
+          height: 100%;
+          width: 152px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+      }
+      .item {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+
+    .main-outer2 {
+      .heading-2 {
+
+
+          .title {
+
+
+            p{
+              font-size: 17px;
+            }
+          }
+
+
+        div {
+          width: 85px;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+      }
+      .item {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+

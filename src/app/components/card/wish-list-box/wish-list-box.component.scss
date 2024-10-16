@@ -4,7 +4,7 @@
   //   padding: 0% 0% 0% 9.4%;
   width: 100%;
   height: 376px;
-  
+
 
   .outer-container {
     position: relative;
@@ -97,6 +97,29 @@
 
 
 
+    }
+  }
+}
+
+
+@media (max-width: 667px) and (min-width:440px) {
+
+  .most-outer-container{
+
+
+    .outer-container{
+      width: 365px;
+
+      .item{
+
+        .product-image{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-right: 90px;
+        }
+      }
     }
   }
 }
