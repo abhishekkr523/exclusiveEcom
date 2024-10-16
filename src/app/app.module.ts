@@ -49,6 +49,7 @@ import { WishListPageComponent } from './pages/wish-list-page/wish-list-page.com
 import { WishListCompComponent } from './components/wish-list-comp/wish-list-comp.component';
 import { WishListBoxComponent } from './components/card/wish-list-box/wish-list-box.component';
 import { WishListBox2Component } from './components/card/wish-list-box2/wish-list-box2.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 // import { BreadcrumbModule} from '@syncfusion/ej2-angular-navigations'
 // import {BreadcrumbComponent} from 'xng-breadcrumb'
 
@@ -89,7 +90,8 @@ import { WishListBox2Component } from './components/card/wish-list-box2/wish-lis
     WishListPageComponent,
     WishListCompComponent,
     WishListBoxComponent,
-    WishListBox2Component
+    WishListBox2Component,
+    ProductDetailsComponent
   ],
 
   imports: [

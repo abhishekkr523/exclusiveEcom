@@ -14,19 +14,20 @@ import { AboutComponent } from './pages/about/about.component';
 import { CartListComponent } from './layout/components/cart-list/cart-list.component';
 import { CheckOutComponent } from './pages/CheckOutPage/check-out/check-out.component';
 import { WishListPageComponent } from './pages/wish-list-page/wish-list-page.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home',
+  {
+    path: 'home',
     data: { breadcrumb: { alias: 'Home' } },
-    children : [
+    children: [
       { path: '', component: HomeComponent },
       {
         path: 'myAccount',
         component: MyAccountComponent,
         data: { breadcrumb: { alias: 'My Account' } }, // Only set alias here
         children: [
-
           {
             path: '',
             redirectTo: 'myProfile',
@@ -59,25 +60,28 @@ const routes: Routes = [
           },
         ],
       },
-      { path: 'cart',
-        data: { breadcrumb: { alias: 'Cart' } ,},
-       children:[
-        {
-          path:'',component:CartListComponent
-        },
-        {
-          path:'checkout',component:CheckOutComponent,
-          data: { breadcrumb: { alias: 'Checkout' } }
-        },
-       ]
+      {
+        path: 'cart',
+        data: { breadcrumb: { alias: 'Cart' } },
+        children: [
+          {
+            path: '',
+            component: CartListComponent,
+          },
+          {
+            path: 'checkout',
+            component: CheckOutComponent,
+            data: { breadcrumb: { alias: 'Checkout' } },
+          },
+        ],
       },
       {
-        path:'wishList',
-        component:WishListPageComponent
-      }
-
-    ]
-   },
+        path: 'wishList',
+        component: WishListPageComponent,
+      },
+      { path: 'productDetails', component: ProductDetailsComponent },
+    ],
+  },
 
   { path: 'userAuth', component: UserAuthComponent },
 
@@ -86,7 +90,6 @@ const routes: Routes = [
   { path: '404', component: NotFoundComponent }, // Added 404 component route
   { path: '**', redirectTo: '404' },
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

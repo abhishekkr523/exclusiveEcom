@@ -359,6 +359,7 @@ export class HomeComponent {
       { title: 'Seconds', duration: '03' },
     ],
   };
+ 
 
   exploreProducts: any = {
     title1: 'Our Products',
@@ -378,7 +379,7 @@ export class HomeComponent {
     title2: 'Browser By Category',
   };
 
-  
+
   productCustomOption = {
     loop: false,
     // mouseDrag: true,
