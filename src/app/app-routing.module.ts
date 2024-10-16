@@ -17,19 +17,16 @@ import { WishListPageComponent } from './pages/wish-list-page/wish-list-page.com
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home',
+  {
+    path: 'home',
     data: { breadcrumb: { alias: 'Home' } },
-    children : [
+    children: [
       { path: '', component: HomeComponent },
-      {
-        path: '', component: HomeComponent
-      },
       {
         path: 'myAccount',
         component: MyAccountComponent,
         data: { breadcrumb: { alias: 'My Account' } }, // Only set alias here
         children: [
-
           {
             path: '',
             redirectTo: 'myProfile',
@@ -62,36 +59,44 @@ const routes: Routes = [
           },
         ],
       },
-      { path: 'cart',
-        data: { breadcrumb: { alias: 'Cart' } ,},
-       children:[
-        {
-          path:'',component:CartListComponent
-        },
-        {
-          path:'checkout',component:CheckOutComponent,
-          data: { breadcrumb: { alias: 'Checkout' } }
-        },
-       ]
+      {
+        path: 'about',
+        component: AboutComponent,
+        data: { breadcrumb: { alias: 'about' } },
       },
       {
-        path:'wishList',
-        component:WishListPageComponent
-      }
-
-    ]
-   },
+        path: 'cart',
+        data: { breadcrumb: { alias: 'Cart' } },
+        children: [
+          {
+            path: '',
+            component: CartListComponent,
+          },
+          {
+            path: 'checkout',
+            component: CheckOutComponent,
+            data: { breadcrumb: { alias: 'Checkout' } },
+          },
+        ],
+      },
+      {
+        path: 'wishList',
+        component: WishListPageComponent,
+      },
+    ],
+  },
 
   { path: 'userAuth', component: UserAuthComponent },
 
   { path: 'contact', component: ContactComponent },
-  { path: 'about', component: AboutComponent,
-    // data: { breadcrumb: { alias: 'about' } },
-   },
+  // {
+  //   path: 'about',
+  //   component: AboutComponent,
+  //   data: { breadcrumb: { alias: 'about' } },
+  // },
   { path: '404', component: NotFoundComponent }, // Added 404 component route
   { path: '**', redirectTo: '404' },
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

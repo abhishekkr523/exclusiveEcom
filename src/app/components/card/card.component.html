@@ -1,10 +1,10 @@
-<div class="most-outer-container">
+<div class="most-outer-container" [style]="customeClass5">
 
   <!-- <h1>default</h1> -->
-  <div class="outer-container">
-    <div class="item">
-      <div class="item-left">99</div>
-      <div class="item-right d-flex flex-column">
+  <div class="outer-container" [class]="customeClass2">
+    <div class="item" [class]="customeClass3">
+      <div class="item-left" [class]="customeClass1">99</div>
+      <div class="item-right d-flex flex-column" [class]="customeClass1">
         <div style="
                 display: flex;
                 align-items: center;
@@ -31,11 +31,20 @@
           <i class="fa-regular fa-eye"></i>
         </div>
       </div>
-      <div class="product-image">
+      <div class="product-image" [class]="customeClass4">
         <img [src]="product.productImage" alt="Product" style="width: 100%; height: 100%; object-fit: contain" />
       </div>
+      <div *ngIf="customeClass2" style="    padding-top: 27px;">
+        <div style="font-weight: 500; font-size: 27px; letter-spacing: 2px;">{{ product.title }}</div>
+        <div style="padding-top: 4px;">{{ product.description }}</div>
+        <div style="display: flex; align-items: center; justify-content: start;     padding-top: 4px;">
+          <div style="padding-right: 15px;"><i class="fa-brands fa-twitter"></i></div>
+          <div style="padding-right: 15px;"><i class="fa-brands fa-instagram"></i></div>
+          <div><i class="fa-brands fa-linkedin"></i></div>
+        </div>
+      </div>
     </div>
-    <div class="item-content">
+    <div class="item-content" [class]="customeClass1">
       <div class="title">{{ product.title }}</div>
       <div class="d-flex">
         <div class="price">${{ product.price }}</div>
@@ -45,7 +54,7 @@
       </div>
 
       <!-- Rating Stars -->
-      <div class="rating d-flex">
+      <div class="rating d-flex" >
         <div class="stars d-flex">
           <img *ngFor="let star of getFilledStars(product.rating)" [src]="product.starIcon" alt="Star" />
           <img *ngFor="let emptyStar of getEmptyStars(product.rating)" src="emptystar.png" alt="Empty Star" />

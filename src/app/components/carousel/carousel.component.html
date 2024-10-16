@@ -1,4 +1,4 @@
-<div class="main-container " [class]="className">
+<div class="main-container " [class]="className" [class]="customClass">
   <owl-carousel-o [options]="customOptions">
     @switch(carouselType){
     @case('homeData'){
@@ -20,6 +20,14 @@
       <app-explore-product-card [product]="products"></app-explore-product-card>
     </ng-template>
     }
+
+    @case('typeAnualData'){
+      <ng-template carouselSlide *ngFor="let data of anualData">
+        <!-- {{products.title}} -->
+        <app-card [product]="data" [customeClass1]="'customeClass1'" [customeClass2]="'customeClass2'" [customeClass3]="'customeClass3'" [customeClass4]="'customeClass4'" [customeClass5]="'customeClass5'"></app-card>
+      </ng-template>
+      }
+
     @default {
     Default case.
     }

@@ -67,9 +67,16 @@ text-decoration: underline;
     // justify-content: space-between;
 
 }
-.owl-nav,.owl-dots{
-    display: none;
+// .owl-nav,.owl-dots{
+//     // display: none;
+// }
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #f10909;
 }
+// .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot{
+//     border: 1px solod black !important;
+//     border-radius: 50%;
+// }
 .owl-nav{
     display: none;
 }

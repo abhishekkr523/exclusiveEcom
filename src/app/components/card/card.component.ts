@@ -14,17 +14,42 @@ export class CardComponent implements OnInit {
   @Input() simpleProductistContainer:any;
   @Input() carouselType: any;
   @Input() exploreProducts?: string;
+  @Input() customeClass1:any;
+  @Input() customeClass2:any;
+  @Input() customeClass3:any;
+  @Input() customeClass4:any;
+  @Input() customeClass5:any;
 
+  // // Returns an array to dynamically generate filled stars based on the rating
+  // getFilledStars(rating: number): any[] {
+  //   return new Array(rating);
+  // }
 
-  // Returns an array to dynamically generate filled stars based on the rating
-  getFilledStars(rating: number): any[] {
-    return new Array(rating);
+  // // Returns an array to dynamically generate empty stars (5 - rating)
+  // getEmptyStars(rating: number): any[] {
+  //   return new Array(5 - rating);
+  // }
+
+  // Returns an array to dynamically generate filled stars based on the rating (clamped between 0 and 5)
+getFilledStars(rating: number): any[] {
+  const validRating = this.validateRating(rating); // Ensure rating is between 0 and 5
+  return new Array(validRating);
+}
+
+// Returns an array to dynamically generate empty stars (5 - validRating)
+getEmptyStars(rating: number): any[] {
+  const validRating = this.validateRating(rating); // Ensure rating is between 0 and 5
+  return new Array(5 - validRating);
+}
+
+// Helper method to validate and clamp rating between 0 and 5
+validateRating(rating: number): number {
+  if (typeof rating !== 'number' || isNaN(rating) || rating < 0) {
+    return 0; // Default to 0 if rating is invalid
   }
+  return Math.min(Math.max(rating, 0), 5); // Ensure rating is between 0 and 5
+}
 
-  // Returns an array to dynamically generate empty stars (5 - rating)
-  getEmptyStars(rating: number): any[] {
-    return new Array(5 - rating);
-  }
 
     // Method to change product image based on selected color
     onColorSelect(selectedColor: any) {

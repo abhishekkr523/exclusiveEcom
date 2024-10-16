@@ -47,7 +47,7 @@ export class HeaderComponent implements OnInit {
       case 'Contact':
         return '/contact';
       case 'About':
-        return '/about';
+        return '/home/about';
       case 'Sign Up':
         return '/userAuth';
       default:
